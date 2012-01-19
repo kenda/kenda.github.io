@@ -1,0 +1,35 @@
+---
+title: vi Bindings everywhere
+created: !!timestamp '2011-02-28 00:00:00'
+tags:
+  - linux
+  - vi
+image: http://upload.wikimedia.org/wikipedia/commons/4/4a/Vim_gloss_128.png
+---
+
+{% mark excerpt -%}
+
+This should be a little overview of how to tweak some programs to use the awesome vi Bindings. I'm sure its not complete.
+{%- endmark %}
+
+- **Abiword**  
+    - Put ``KeyBindings="viEdit"`` in the ``<Scheme name="_custom_" ...>`` section of your ``~/.AbiSuite/AbiWord.Profile``
+ If you want to cycle through the input methods pressing F12, put ``KeyBindingsCycle="1"`` also in this section.
+- **bash**  
+    - ``echo "set -o vi" >> ~/.bashrc``
+- **Chrome/Chromium**  
+    - [Vrome](http://www.chromeextensions.org/other/vrome/)
+    - [Vimium](https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb?hl=de)
+- **Eclipse**  
+    - [eclim](http://eclim.org/)
+    - [Vrapper](http://vrapper.sourceforge.net/home/)
+- **Emacs** :)  
+    - [ViperMode](http://www.emacswiki.org/emacs/ViperMode)
+- **Firefox**  
+    - [Vimperator](http://vimperator.org/vimperator)
+- **irssi**  
+    - [vim_mode.pl](https://github.com/shabble/irssi-scripts/tree/master/vim-mode)
+- **zsh**  
+    - ``echo "bindkey -v" >> ~/.zshrc``
+
+lalelu

@@ -1,0 +1,210 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8"><!-- "> -->
+
+  <title>Hello World</title>
+  <meta name="description" content="">
+  <meta name="author" content="Marcus Nitzschke">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+    <link rel="stylesheet" href="/media/css/site.css">
+  <link rel="stylesheet" href="/media/css/syntax.css">
+  <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet'  type='text/css' />
+  
+    <!-- All JavaScript at the bottom, except for Modernizr which
+        enables HTML5 elements & feature detects -->
+    <script src="/media/js/libs/modernizr-1.7.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+            <!-- Javascript at the bottom for fast page loading -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  
+    
+  
+  </head>
+<body id="index">
+    <div id="container">
+            <div id="main" role="main">
+          <header class="banner clearfix">
+          <h1>Hello World.</h1>                              <nav class=main_nav>
+    <ul>
+                <li>
+            <a title="Home Page"
+                class="button white active home"
+                href="/">
+                home
+            </a>
+        </li>        <li>
+            <a title="About"
+                class="button white about"
+                href="/about">
+                about
+            </a>
+        </li>        <li>
+            <a title="Blog"
+                class="button white blog"
+                href="/blog">
+                blog
+            </a>
+        </li>        <li>
+            <a title="Code"
+                class="button white code"
+                href="/code">
+                code
+            </a>
+        </li>        <li>
+            <a title="Study"
+                class="button white study"
+                href="/study">
+                study
+            </a>
+        </li>    </ul>
+</nav>
+                    </header>
+          <section class="content">
+          
+<p>
+  This is the virtual home of Marcus Nitzschke. Here you can find informations about his projects and other stuff. <br/>
+
+  <b>Note</b>: there might be parts in German.
+</p><br/>
+
+<div class="bg_button">
+  <h2>recent activities</h2>
+</div>
+<div style="margin-top:40px;margin-bottom:20px;text-align:center;" id="ajax_loader">
+  <img src="/media/images/ajax-loader.gif" />
+</div>
+<div id="lifestream">
+</div>
+
+<script src="/media/js/libs/jquery.simple_lifestream.js"></script>
+<script src="https://www.google.com/jsapi?key=ABQIAAAAC_3a8ZUfOJxy-EatPC4qaRRimDksKHn9Oe1GWLfZwxBDKHSm0BQufL2Fg030USM3BOx6xr6N6cQVdA" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("feeds", "1");
+    $().ready(function(){
+	$("#lifestream").lifestream({
+	    "feeds" : [
+		"http://www.kendix.org/atom/",
+		"http://github.com/kenda.atom",
+		"http://identi.ca/kenda/rss",
+		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=adn3k",
+		"http://api.flickr.com/services/feeds/photos_public.gne?id=42537411@N07&lang=de-de&format=rss_200"
+	    ],
+	    "count" : 5,
+	}, function(){
+	    $("#entries .content, div#ajax_loader").hide();
+	    $("#entries .title").append("&nbsp;<a href='#' class='more'>more..</a>");
+	    $("#entries .more").click(function(){
+		$(this).parents("li").children(".content").toggle();
+	    });
+	});
+    });
+</script>
+<noscript>
+  <p>I understand that you are not using javascript, but this section doesn't show anything meaningful without it. I'm sorry.</p>
+</noscript>
+
+
+<br/>
+<div class="bg_button">
+  <h2>recent articles</h2>
+</div>
+
+  <ul class="listing clear">
+
+      <li><article>
+<!-- class=post>-->
+<h3><a href="/blog/moving_from_textpattern_to_hyde">Moving from Textpattern to Hyde</a></h3>
+<time datetime="2012-01-18">
+    Posted: Wed, 18 Jan 2012
+</time><br/>
+<a href="/blog/moving_from_textpattern_to_hyde" class="excerpt_image"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dr_Jekyll_and_Mr_Hyde_poster.png/800px-Dr_Jekyll_and_Mr_Hyde_poster.png" /></a>
+<p>
+This post is about my switch from <a href="http://textpattern.org">Textpattern</a> to <a href="http://hyde.github.com/">Hyde</a> as my website system (some call it <span class="caps">CMS</span>&nbsp;thought).
+</p>
+<p>
+In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and then Textpattern. The reasons for this
+changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
+I&#8217;m happy with Hyde&nbsp;:)
+</p>
+</article>
+<br/>
+<a href="/blog/moving_from_textpattern_to_hyde" style="font-size:0.8em;">read all</a>
+</li>
+      <li><article>
+<!-- class=post>-->
+<h3><a href="/blog/presentations-with-orgmode-and-beamer-class">Save useful time by writing presentations with Orgmode and Beamer class</a></h3>
+<time datetime="2011-10-29">
+    Posted: Sat, 29 Oct 2011
+</time><br/>
+<a href="/blog/presentations-with-orgmode-and-beamer-class" class="excerpt_image"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Org-mode-unicorn.svg/162px-Org-mode-unicorn.svg.png" /></a>
+<p>I just wanted to share my happiness about a new workflow for writing presentations. I couldn’t believe how quick I got useful slides by writing my notes with Emacs’ <a href="http://orgmode.org/">Orgmode</a>. So, here it&nbsp;is:</p>
+<ol>
+<li>Do some research or brainstorming or whatever and take notes with&nbsp;Orgmode</li>
+<li>Do a little cleanup on the structure of your notes so that you get a useful <a href="http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html#sec-3">structure</a> of your&nbsp;slides</li>
+<li><a href="http://orgmode.org/manual/Exporting.html">Export</a> your notes with the LaTeX <a href="https://bitbucket.org/rivanvx/beamer/">Beamer class</a><br />
+<ul>
+<li>You may have to append the defintion for beamer class to org-export-latex-classes. Here is <a href="https://gist.github.com/1324351">my</a>&nbsp;definition.</li>
+</ul>
+</li>
+</ol>
+<p>That’s it!
+This means you don’t waste any time with creating your slides and you can concentrate 100% on the content. I’m sure that’s (even more) faster than writing pure LaTeX and faster, nicer, … than [Open|Libre]Office/<span class="caps">PPT</span> anyway. Don’t know what to do with the whole time, but thanks Orgmode!&nbsp;:)</p>
+<p>Further&nbsp;reading:</p>
+<ul>
+<li><a href="http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html">http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html</a></li>
+<li><a href="http://orgmode.org/manual/Beamer-class-export.html">http://orgmode.org/manual/Beamer-class-export.html</a></li>
+</ul>
+<p>P.S.: Yeah, two posts below this one, I wrote about Vim – just don’t care&nbsp;;)</p>
+</article>
+<br/>
+<a href="/blog/presentations-with-orgmode-and-beamer-class" style="font-size:0.8em;">read all</a>
+</li>
+      <li><article>
+<!-- class=post>-->
+<h3><a href="/blog/mongodb-as-rdf-triple-store">MongoDB as RDF triple store based on Node.js</a></h3>
+<time datetime="2011-09-23">
+    Posted: Fri, 23 Sep 2011
+</time><br/>
+<a href="/blog/mongodb-as-rdf-triple-store" class="excerpt_image"><img src="http://kendix.org/media/images/13.png" /></a>
+<p>This is a short summary of my <a href="/media/files/thesis.pdf">bachelor thesis</a> that was written in German. Maybe someone else is interested in the&nbsp;results.</p>
+<h2>About</h2>
+<p>The topic of the thesis was “Implementing a <span class="caps">RDF</span> storage solution for <a href="http://mongodb.org/">MongoDB</a>”. Besides this implementation part the performance of the written <span class="caps">API</span> was compared to <a href="http://www.openlinksw.com/dataspace/dav/wiki/Main/">Virtuoso Open-Source</a>.</p>
+<p>So, to summarize this thesis, the main question is “Could MongoDB be an alternative to Virtuoso as triple&nbsp;store?”.</p>
+</article>
+<br/>
+<a href="/blog/mongodb-as-rdf-triple-store" style="font-size:0.8em;">read all</a>
+</li>
+        
+  </ul>
+
+
+          </section>
+      </div>
+      </div> <!--! end of #container -->
+  
+  <footer>
+    <span id="cc">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+	<img src="/media/images/cc.png" alt="Creative Commons Lizenzvertrag" title="all content under CC BY-SA" width="48" height="48" />
+      </a>
+    </span>
+    <!-- <span id="rss"> -->
+    <!--   <a href="http://www.kendix.org/rss/?section=about" title="RSS Feed"> -->
+    <!-- 	<img src="http://www.kendix.org/images/7.png" alt="RSS feed" title="RSS feed" width="48" height="47" /> -->
+    <!--   </a> -->
+    <!-- </span> -->
+    <span id ="atom">
+      <a href="/blog/atom.xml" title="Atom Feed">
+	<img src="/media/images/atom.png" alt="Atom feed" title="Atom feed" width="48" height="47" />
+      </a>
+    </span>
+  </footer>
+</body>
+</html>

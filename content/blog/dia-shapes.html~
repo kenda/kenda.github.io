@@ -1,0 +1,27 @@
+---
+title: Dia Shapes für Logikgatter nach IEC 60617-12 Norm
+created: !!timestamp '2010-12-01 00:00:00'
+tags:
+    - linux
+    - dia
+---
+
+{% mark mage -%}
+
+![Airport]([[!!http://upload.wikimedia.org/wikipedia/commons/5/5f/Dia_logo.jpg]])
+
+{%- endmark %}
+
+{% mark excerpt -%}
+
+[Dia](http://projects.gnome.org/dia/) ist seit einiger Zeit mein Standardprogramm wenn es um Diagramme geht. 
+Für mein Studium brauchte ich Logikgatter nach IEC Norm, welche in Deutschland wohl Stand der Dinge wären. Da ich diese Shapes nirgends finden konnte, habe ich sie mal selber erstellt.
+Hier also die die entsprechenden Dateien:
+[Download]()
+
+Zum ‘Installieren’ einfach die beiden Ordner in das Verzeichnis ~/.dia/ (unter Linux) entpacken.
+
+Und wem die Shapes nicht gefallen, hier noch die Quellgrafiken:
+[Download]()
+
+{%- endmark %}

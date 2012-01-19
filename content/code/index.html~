@@ -1,0 +1,19 @@
+---
+extends: base.j2
+default_block: main
+title: Code
+---
+
+{% markdown %}
+# Projects
+- [Jalli](/code/jalli) - an opensource chatlog converter
+- [jQuery.aLiDa](http://aksw.org/projects/alida/) - an extended autocomplete plugin based on SPARQL endpoints
+- [jQuery.simple_lifestream](https://github.com/kenda/jQuery.simple_lifestream) - tiny plugin that aggregates multiple rss/atom feeds and prints their items sorted by date
+- [nlp2rdf.MontyLingua](https://github.com/kenda/nlp2rdf.MontyLingua) - An extension for NLP2RDF and the MontyLingua Toolkit
+- [node_mongo_rdf](https://github.com/kenda/node_mongo_rdf) - Project for storing RDF data in MongoDB based on Node.js
+
+# Patches, Scripts etc.
+- goobook - [78a441bb](http://gitorious.org/goobook/mainline/commit/78a441bb94932e6d9929e1ce834ce75699e83513)
+- [fortune-protolol](https://github.com/kenda/fortune-protolol) - Fortune file for #protolol quotes
+
+{% endmarkdown %}

@@ -1,0 +1,33 @@
+#+BEGIN_HTML
+---
+---
+title: Moving from Textpattern to Hyde
+created: !!timestamp '2012-01-18 16:55:00'
+tags:
+- textpattern
+- hyde
+- python
+image: http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dr_Jekyll_and_Mr_Hyde_poster.png/800px-Dr_Jekyll_and_Mr_Hyde_poster.png
+---
+
+{% mark excerpt -%}
+#+END_HTML
+This post is about my switch from [[http://textpattern.org][Textpattern]] to [[http://hyde.github.com/][Hyde]] as my website system (some call it CMS thought).
+
+In the past I tried a few systems, starting with [[http://wordpress.org][Wordpress]], then [[http://www.mediawiki.org/wiki/MediaWiki][MediaWiki]] and then Textpattern. The reasons for this
+changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
+I'm happy with Hyde :)
+
+#+BEGIN_HTML
+{%- endmark %}
+#+END_HTML
+
+** Textpattern
+What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
+serveral ?Textbausteine? which are some kind of shortcuts for often used ?Ausdrücke?, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy for me to implement [[http://en.wikipedia.org/wiki/RDFa][RDFa]]. Nevertheless I felt Textpattern
+is a bit moldy and I couldn't really cotton up with [[http://en.wikipedia.org/wiki/Textile_(markup_language)][Textile]], but that's 100% subjective.
+
+** Hyde
+
+*** Orgmode and Hyde

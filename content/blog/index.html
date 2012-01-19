@@ -1,0 +1,11 @@
+---
+title: Blog
+extends: listing.j2
+default_block: test
+listable: false
+---
+<!--{% from "macros.j2" import render_excerpt with context %}
+{%for post in site.content.walk_resources_sorted_by_time() %}
+  {{ render_excerpt(post, "post") }}
+{%endfor%}
+-->

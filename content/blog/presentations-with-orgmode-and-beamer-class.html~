@@ -1,0 +1,29 @@
+---
+title: Save useful time by writing presentations with Orgmode and Beamer class
+created: !!timestamp '2011-10-29 00:00:00'
+tags:
+  - Emacs
+  - Orgmode
+image: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Org-mode-unicorn.svg/162px-Org-mode-unicorn.svg.png
+---
+
+{% mark excerpt -%}
+
+I just wanted to share my happiness about a new workflow for writing presentations. I couldn’t believe how quick I got useful slides by writing my notes with Emacs’ [Orgmode](http://orgmode.org/). So, here it is:
+
+1. Do some research or brainstorming or whatever and take notes with Orgmode
+2. Do a little cleanup on the structure of your notes so that you get a useful [structure](http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html#sec-3) of your slides
+3. [Export](http://orgmode.org/manual/Exporting.html) your notes with the LaTeX [Beamer class](https://bitbucket.org/rivanvx/beamer/)  
+    - You may have to append the defintion for beamer class to org-export-latex-classes. Here is [my](https://gist.github.com/1324351) definition.
+
+That’s it!
+This means you don’t waste any time with creating your slides and you can concentrate 100% on the content. I’m sure that’s (even more) faster than writing pure LaTeX and faster, nicer, … than [Open|Libre]Office/PPT anyway. Don’t know what to do with the whole time, but thanks Orgmode! :)
+
+Further reading:
+
+- http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html
+- http://orgmode.org/manual/Beamer-class-export.html
+
+P.S.: Yeah, two posts below this one, I wrote about Vim – just don’t care ;)
+
+{%- endmark %}

@@ -1,0 +1,250 @@
+
+
+---
+title: Moving from Textpattern to Hyde
+created: !!timestamp '2012-01-18 16:55:00'
+tags:
+- textpattern
+- hyde
+- python
+image: ../../media/images/hyde.png
+---
+
+{% mark excerpt -%}
+<p>
+This post is about my switch from <a href="http://textpattern.org">Textpattern</a> to <a href="http://hyde.github.com/">Hyde</a> as my website system (some call it CMS thought).
+</p>
+<p>
+In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and then Textpattern. The reasons for this
+changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
+I'm happy with Hyde :)
+</p>
+
+
+{%- endmark %}
+
+
+<div id="outline-container-1" class="outline-3">
+<h3 id="sec-1">Textpattern </h3>
+<div class="outline-text-3" id="text-1">
+
+<p>What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
+serveral ?Textbausteine? which are some kind of shortcuts for often used ?Ausdrücke?, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy for me to implement <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. Nevertheless I felt Textpattern
+is a bit moldy and I couldn't really cotton up with <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>, but that's 100% subjective.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-3">
+<h3 id="sec-2">Hyde </h3>
+<div class="outline-text-3" id="text-2">
+
+<p>Hyde is a static website generator originally based on <a href="http://djangoproject.com">Django</a>. It can be seen as the Python equivalent of <a href="http://jekyllrb.com/">Jekyll</a> which is written
+in Ruby. Because I was working with Django for 2 years, I really like that Hyde is using the <a href="http://jinja.pocoo.org/docs/">Jinja2</a> template engine which
+is modelled after Django's. Near this fact I mainly chose Hyde because it is incredibly fast cause its pure static html. And a last
+big goody is that I can write the articles with <a href="http://orgmode.org/">Orgmode</a>, but more on this later.
+</p>
+<p>
+I try to sum the facts up:
+</p>
+<p>
+<b>Pros</b>:
+</p><ul>
+<li>
+static &rarr; really fast
+</li>
+<li>
+uses Jinja2
+</li>
+<li>
+easy to extend
+</li>
+<li>
+existing plugins like:
+<ul>
+<li>
+URLcleaner
+</li>
+<li>
+OptiPNG, jpegoptim
+</li>
+<li>
+UglifyJS
+</li>
+</ul>
+</li>
+<li>
+active development
+</li>
+<li>
+(it's Python :) )
+
+</li>
+</ul>
+
+<p><b>Cons</b>:
+</p><ul>
+<li>
+I don't want to call this a con, but the fact that Hyde produces static content you have to include external tools for comments,
+website statistics or other dynamic stuff. But this is a) no problem and b) not all people needs a commenting system for example.
+
+</li>
+</ul>
+
+<p>At this point could be a lot more interesting stuff about Hyde, like the possible settings, or the publishers which allows to publish
+the website to different sources like git repositories, S3, a zip file or normal ftp locations. For this further knowledge I try to collect some resources
+which hopefully will give you a better overview of Hyde's features.
+</p>
+
+</div>
+
+<div id="outline-container-2.1" class="outline-4">
+<h4 id="sec-2.1">Resources </h4>
+<div class="outline-text-4" id="text-2.1">
+
+<ul>
+<li>
+<a href="http://hyde.github.com/">Documentation</a>
+</li>
+<li>
+<a href="https://github.com/hyde/hyde">Github</a>
+</li>
+<li>
+<a href="http://merlin.rebrovic.net/hyde-starter-kit/">Hyde Starter Kit</a>
+</li>
+<li>
+<a href="http://stevelosh.com/blog/2010/01/moving-from-django-to-hyde/">"Moving from Django to Hyde"</a> by Steve Losh
+
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-3">
+<h3 id="sec-3">Orgmode and Hyde </h3>
+<div class="outline-text-3" id="text-3">
+
+<p>This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
+<a href="http://daringfireball.net/projects/markdown/">Markdown</a> or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two reasons:
+</p><ul>
+<li>
+Many Latex symbols out of the box like &forall; ,&exist; ,&alpha; ,&beta; and so on
+</li>
+<li>
+Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor">ascii tables</a> are exportes to html table - I never found a way to generate tables that simple
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">H1</th><th scope="col">H2</th><th scope="col">H3</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>2</td><td>3</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+
+</div>
+
+<div id="outline-container-3.1" class="outline-4">
+<h4 id="sec-3.1">Project structure </h4>
+<div class="outline-text-4" id="text-3.1">
+
+<p>It is advisable to organize your website in an Orgmode project. My folder structure looks like this:
+</p>
+
+
+<pre class="src src-plain">|-- content
+|   |-- about
+|   |-- blog
+|   |-- code
+|   |-- media
+|   `-- study
+|-- deploy
+|   |-- about
+|   |-- blog
+|   |-- code
+|   |-- media
+|   `-- study
+|-- layout
+`-- org
+</pre>
+
+
+
+
+<p>
+You also have to define the project in a config file of Emacs. In my case it looks like this:
+</p>
+
+
+
+<pre class="src src-emacs-lisp">(setq org-publish-project-alist
+      '(
+        (<span style="color: #cc9393;">"kendix.org"</span>
+         <span style="color: #8cd0d3;">:base-directory</span> <span style="color: #cc9393;">"~/Code/websites/kendix.org/org/"</span>
+         <span style="color: #8cd0d3;">:base-extension</span> <span style="color: #cc9393;">"org"</span>
+         <span style="color: #8cd0d3;">:publishing-directory</span> <span style="color: #cc9393;">"~/Code/websites/kendix.org/content/blog"</span>
+         <span style="color: #8cd0d3;">:recursive</span> t
+         <span style="color: #8cd0d3;">:publishing-function</span> org-publish-org-to-html
+         <span style="color: #8cd0d3;">:headline-levels</span> 4 
+         <span style="color: #8cd0d3;">:html-extension</span> <span style="color: #cc9393;">"html"</span>
+         <span style="color: #8cd0d3;">:body-only</span> t <span style="color: #7f9f7f;">;; </span><span style="color: #7f9f7f;">Only export section between &lt;body&gt; &lt;/body&gt;
+</span>         )
+))
+</pre>
+
+
+
+
+<p>
+This means I write my articles in the org directory. After that I export (C-c C-e X) the project (the articles) to content/blog directory. And from
+there Hyde uses the generated html files for deploying. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-4">
+<h4 id="sec-3.2">YAML settings </h4>
+<div class="outline-text-4" id="text-3.2">
+
+<p>Each article can contain yaml settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
+should export to html you can use the <code>#+BEGIN_HTML</code> directive. So this article for example starts with:
+</p>
+
+
+<pre class="src src-yaml"> #+BEGIN_HTML
+---
+---
+title: Moving from Textpattern to Hyde
+created: !!timestamp '2012-01-18 16:55:00'
+tags:
+- textpattern
+- hyde
+- python
+---
+</pre>
+
+
+
+<p>
+Note: Normally there would be only one "&mdash;" line above <code>title</code>, but Orgmode removes the first line in my case so this is a little hack.
+</p>
+<p>
+Now you should be able to easily write your content with Orgmode and let it serve by Hyde.
+</p>
+
+<p>
+<i>So, I hope I could give a little overview about Hyde and its features. And maybe someone will find the Orgmode part useful.</i>
+</p></div>
+</div>
+</div>
