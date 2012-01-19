@@ -2,39 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>
         BASIC blog excerpts feed    </title>
-        <link href="blog/excerpts.xml" rel="self" />
+        <link href="/blog/excerpts.xml" rel="self" />
     
         <link href="/"/>
     
         
-    <updated>2012-01-19T14:37:07Z</updated>
+    <updated>2012-01-19T21:13:05Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
             <entry>
-            <title type="html">Moving from Textpattern to Hyde</title>
+            <title type="html">Moving from Textpattern to Hyde and integrating Orgmode</title>
             <author><name>Marcus Nitzschke</name></author>
             <link href="/blog/moving_from_textpattern_to_hyde"/>
             <updated>2012-01-18T16:55:00Z</updated>
             <published>2012-01-18T16:55:00Z</published>
             <id>/blog/moving_from_textpattern_to_hyde</id>
                         <category   scheme="/blog/tags"
-                        term="textpattern"
+                        term="Textpattern"
                         label="Textpattern" />
                         <category   scheme="/blog/tags"
-                        term="hyde"
+                        term="Hyde"
                         label="Hyde" />
                         <category   scheme="/blog/tags"
-                        term="python"
+                        term="Python"
                         label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
             
             <content type="html">
                 
                 &lt;p&gt;
 This post is about my switch from &lt;a href=&#34;http://textpattern.org&#34;&gt;Textpattern&lt;/a&gt; to &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt; as my website system (some call it &lt;span class=&#34;caps&#34;&gt;CMS&lt;/span&gt;&amp;nbsp;thought).
 &lt;/p&gt;
+
 &lt;p&gt;
-In the past I tried a few systems, starting with &lt;a href=&#34;http://wordpress.org&#34;&gt;Wordpress&lt;/a&gt;, then &lt;a href=&#34;http://www.mediawiki.org/wiki/MediaWiki&#34;&gt;MediaWiki&lt;/a&gt; and then Textpattern. The reasons for this
+In the past I tried a few systems, starting with &lt;a href=&#34;http://wordpress.org&#34;&gt;Wordpress&lt;/a&gt;, then &lt;a href=&#34;http://www.dokuwiki.org/dokuwiki&#34;&gt;DokuWiki&lt;/a&gt; and then Textpattern. The reasons for this
 changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
 I&amp;#8217;m happy with Hyde&amp;nbsp;:)
 &lt;/p&gt;            </content>

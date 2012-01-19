@@ -619,3 +619,7 @@ pre.src{
     border: 1px dotted #ccc;
     padding: 4px;
     }
+
+.addthis_toolbox{
+    float: left;
+    }

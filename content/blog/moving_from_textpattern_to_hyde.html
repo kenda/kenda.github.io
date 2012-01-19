@@ -1,12 +1,13 @@
 
 
 ---
-title: Moving from Textpattern to Hyde
+title: Moving from Textpattern to Hyde and integrating Orgmode
 created: !!timestamp '2012-01-18 16:55:00'
 tags:
-- textpattern
-- hyde
-- python
+- Textpattern
+- Hyde
+- Python
+- Orgmode
 image: ../../media/images/hyde.png
 ---
 
@@ -15,7 +16,7 @@ image: ../../media/images/hyde.png
 This post is about my switch from <a href="http://textpattern.org">Textpattern</a> to <a href="http://hyde.github.com/">Hyde</a> as my website system (some call it CMS thought).
 </p>
 <p>
-In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and then Textpattern. The reasons for this
+In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.dokuwiki.org/dokuwiki">DokuWiki</a> and then Textpattern. The reasons for this
 changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
 I'm happy with Hyde :)
 </p>
@@ -29,8 +30,8 @@ I'm happy with Hyde :)
 <div class="outline-text-3" id="text-1">
 
 <p>What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
-serveral ?Textbausteine? which are some kind of shortcuts for often used ?Ausdrücke?, like a header, menu or footer. 
-Because it is so easy to extend the structure it was very easy for me to implement <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. Nevertheless I felt Textpattern
+several 'forms' which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy to implement <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. Nevertheless I felt Textpattern
 is a bit moldy and I couldn't really cotton up with <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>, but that's 100% subjective.
 </p>
 </div>
@@ -87,7 +88,7 @@ active development
 <p><b>Cons</b>:
 </p><ul>
 <li>
-I don't want to call this a con, but the fact that Hyde produces static content you have to include external tools for comments,
+I don't want to call this a con, but the fact that Hyde produces static content involves that you have to include external tools for comments,
 website statistics or other dynamic stuff. But this is a) no problem and b) not all people needs a commenting system for example.
 
 </li>
@@ -135,19 +136,7 @@ which hopefully will give you a better overview of Hyde's features.
 Many Latex symbols out of the box like &forall; ,&exist; ,&alpha; ,&beta; and so on
 </li>
 <li>
-Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor">ascii tables</a> are exportes to html table - I never found a way to generate tables that simple
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col align="left" /><col align="left" /><col align="left" />
-</colgroup>
-<thead>
-<tr><th scope="col">H1</th><th scope="col">H2</th><th scope="col">H3</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>2</td><td>3</td></tr>
-</tbody>
-</table>
-
+Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor">ascii tables</a> are exported to html tables - I never found a way to generate tables that simple
 
 </li>
 </ul>
@@ -182,7 +171,7 @@ Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built
 
 
 <p>
-You also have to define the project in a config file of Emacs. In my case it looks like this:
+You also have to define the project in a config file of Emacs like this:
 </p>
 
 
@@ -217,12 +206,12 @@ there Hyde uses the generated html files for deploying.
 <h4 id="sec-3.2">YAML settings </h4>
 <div class="outline-text-4" id="text-3.2">
 
-<p>Each article can contain yaml settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
+<p>Each article can contain YAML settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
 should export to html you can use the <code>#+BEGIN_HTML</code> directive. So this article for example starts with:
 </p>
 
 
-<pre class="src src-yaml"> #+BEGIN_HTML
+<pre class="src src-yaml">#+BEGIN_HTML
 ---
 ---
 title: Moving from Textpattern to Hyde
@@ -237,14 +226,18 @@ tags:
 
 
 <p>
-Note: Normally there would be only one "&mdash;" line above <code>title</code>, but Orgmode removes the first line in my case so this is a little hack.
-</p>
-<p>
-Now you should be able to easily write your content with Orgmode and let it serve by Hyde.
-</p>
+<b>Note</b>: 
+</p><ul>
+<li>
+Normally there would be only one "&mdash;" line above <code>title</code>, but Orgmode removes the first line in my case. So this is a little hack.
+</li>
+<li>
+Don't forget the <code>END_HTML</code> after the last line. But somehow this is ommited after export :(
 
-<p>
-<i>So, I hope I could give a little overview about Hyde and its features. And maybe someone will find the Orgmode part useful.</i>
+</li>
+</ul>
+
+<p>Now you should be able to easily write your content with Orgmode and let it serve by Hyde. Hope this is useful to someone.
 </p></div>
 </div>
 </div>

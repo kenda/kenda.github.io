@@ -1,12 +1,13 @@
 #+BEGIN_HTML
 ---
 ---
-title: Moving from Textpattern to Hyde
+title: Moving from Textpattern to Hyde and integrating Orgmode
 created: !!timestamp '2012-01-18 16:55:00'
 tags:
-- textpattern
-- hyde
-- python
+- Textpattern
+- Hyde
+- Python
+- Orgmode
 image: ../../media/images/hyde.png
 ---
 
@@ -14,7 +15,7 @@ image: ../../media/images/hyde.png
 #+END_HTML
 This post is about my switch from [[http://textpattern.org][Textpattern]] to [[http://hyde.github.com/][Hyde]] as my website system (some call it CMS thought).
 
-In the past I tried a few systems, starting with [[http://wordpress.org][Wordpress]], then [[http://www.mediawiki.org/wiki/MediaWiki][MediaWiki]] and then Textpattern. The reasons for this
+In the past I tried a few systems, starting with [[http://wordpress.org][Wordpress]], then [[http://www.dokuwiki.org/dokuwiki][DokuWiki]] and then Textpattern. The reasons for this
 changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
 I'm happy with Hyde :)
 
@@ -24,8 +25,8 @@ I'm happy with Hyde :)
 
 ** Textpattern
 What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
-serveral ?Textbausteine? which are some kind of shortcuts for often used ?Ausdrücke?, like a header, menu or footer. 
-Because it is so easy to extend the structure it was very easy for me to implement [[http://en.wikipedia.org/wiki/RDFa][RDFa]]. Nevertheless I felt Textpattern
+several 'forms' which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy to implement [[http://en.wikipedia.org/wiki/RDFa][RDFa]]. Nevertheless I felt Textpattern
 is a bit moldy and I couldn't really cotton up with [[http://en.wikipedia.org/wiki/Textile_(markup_language)][Textile]], but that's 100% subjective.
 
 ** Hyde
@@ -48,7 +49,7 @@ I try to sum the facts up:
 - (it's Python :) )
 
 *Cons*:
-- I don't want to call this a con, but the fact that Hyde produces static content you have to include external tools for comments,
+- I don't want to call this a con, but the fact that Hyde produces static content involves that you have to include external tools for comments,
   website statistics or other dynamic stuff. But this is a) no problem and b) not all people needs a commenting system for example.
 
 At this point could be a lot more interesting stuff about Hyde, like the possible settings, or the publishers which allows to publish
@@ -65,12 +66,7 @@ which hopefully will give you a better overview of Hyde's features.
 This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
 [[http://daringfireball.net/projects/markdown/][Markdown]] or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two reasons:
 - Many Latex symbols out of the box like \forall ,\exists ,\alpha ,\beta and so on
-- Orgmodes [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][ascii tables]] are exportes to html table - I never found a way to generate tables that simple
-|----+----+----|        
-| H1 | H2 | H3 |
-|----+----+----|
-|  1 |  2 |  3 |
-|----+----+----|
+- Orgmodes [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][ascii tables]] are exported to html tables - I never found a way to generate tables that simple
 
 *** Project structure
 It is advisable to organize your website in an Orgmode project. My folder structure looks like this:
@@ -91,7 +87,7 @@ It is advisable to organize your website in an Orgmode project. My folder struct
 `-- org
 #+end_src
 
-You also have to define the project in a config file of Emacs. In my case it looks like this:
+You also have to define the project in a config file of Emacs like this:
 
 #+begin_src emacs-lisp
 (setq org-publish-project-alist
@@ -113,10 +109,10 @@ This means I write my articles in the org directory. After that I export (C-c C-
 there Hyde uses the generated html files for deploying. 
 
 *** YAML settings
-Each article can contain yaml settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
+Each article can contain YAML settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
 should export to html you can use the =#+BEGIN_HTML= directive. So this article for example starts with:
 #+begin_src yaml
- #+BEGIN_HTML
+#+BEGIN_HTML
 ---
 ---
 title: Moving from Textpattern to Hyde
@@ -126,11 +122,10 @@ tags:
 - hyde
 - python
 ---
- #+END_HTML
+#+END_HTML
 #+end_src
-Note: Normally there would be only one "---" line above =title=, but Orgmode removes the first line in my case so this is a little hack.
+*Note*: 
+- Normally there would be only one "---" line above =title=, but Orgmode removes the first line in my case. So this is a little hack.
+- Don't forget the =END_HTML= after the last line. But somehow this is ommited after export :(
 
-Now you should be able to easily write your content with Orgmode and let it serve by Hyde.
-
-
-/So, I hope I could give a little overview about Hyde and its features. And maybe someone will find the Orgmode part useful./
+Now you should be able to easily write your content with Orgmode and let it serve by Hyde. Hope this is useful to someone.

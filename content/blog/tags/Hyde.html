@@ -4,7 +4,7 @@ listable: false
 
 ---
 
-{% set tag = site.tagger.tags['linux'] %}
+{% set tag = site.tagger.tags['Hyde'] %}
 {% set source = site.content.node_from_relative_path('blog') %}
-{% set walker = source['walk_resources_tagged_with_linux'] %}
+{% set walker = source['walk_resources_tagged_with_Hyde'] %}
 {% extends "tagged_posts.j2" %}

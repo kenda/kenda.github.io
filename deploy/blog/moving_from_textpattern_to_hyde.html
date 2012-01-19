@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8"><!-- "> -->
 
-  <title>Hello World - Moving from Textpattern to Hyde</title>
+  <title>Hello World - Moving from Textpattern to Hyde and integrating Orgmode</title>
   <meta name="description" content="">
   <meta name="author" content="Marcus Nitzschke">
 
@@ -39,7 +39,7 @@ $(document).ready(function(){
     <div id="container">
             <div id="main" role="main">
           <header class="banner clearfix">
-          <h1>Hello World.</h1>                              <nav class=main_nav>
+          <h1><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></h1>                              <nav class=main_nav>
     <ul>
                 <li>
             <a title="Home Page"
@@ -92,7 +92,7 @@ $(document).ready(function(){
 </nav>
 <h1 class="title">
     <a href="/blog/moving_from_textpattern_to_hyde">
-        Moving from Textpattern to Hyde
+        Moving from Textpattern to Hyde and integrating Orgmode
     </a>
 </h1>
 
@@ -102,18 +102,23 @@ $(document).ready(function(){
 
 <ul class="tags clear">
 <li>
-    <a class="small" href="/blog/tags/textpattern">
-        textpattern
+    <a class="small" href="/blog/tags/Textpattern">
+        Textpattern
     </a>
 </li>
 <li>
-    <a class="small" href="/blog/tags/hyde">
-        hyde
+    <a class="small" href="/blog/tags/Hyde">
+        Hyde
     </a>
 </li>
 <li>
-    <a class="small" href="/blog/tags/python">
-        python
+    <a class="small" href="/blog/tags/Python">
+        Python
+    </a>
+</li>
+<li>
+    <a class="small" href="/blog/tags/Orgmode">
+        Orgmode
     </a>
 </li>
 </ul>
@@ -121,8 +126,9 @@ $(document).ready(function(){
 <p>
 This post is about my switch from <a href="http://textpattern.org">Textpattern</a> to <a href="http://hyde.github.com/">Hyde</a> as my website system (some call it <span class="caps">CMS</span>&nbsp;thought).
 </p>
+
 <p>
-In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and then Textpattern. The reasons for this
+In the past I tried a few systems, starting with <a href="http://wordpress.org">Wordpress</a>, then <a href="http://www.dokuwiki.org/dokuwiki">DokuWiki</a> and then Textpattern. The reasons for this
 changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
 I&#8217;m happy with Hyde&nbsp;:)
 </p>
@@ -132,11 +138,10 @@ I&#8217;m happy with Hyde&nbsp;:)
 <div class="outline-text-3" id="text-1">
 
 <p>What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
-serveral ?Textbausteine? which are some kind of shortcuts for often used ?Ausdrücke?, like a header, menu or footer. 
-Because it is so easy to extend the structure it was very easy for me to implement <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. Nevertheless I felt Textpattern
+several &#8216;forms&#8217; which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy to implement <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. Nevertheless I felt Textpattern
 is a bit moldy and I couldn&#8217;t really cotton up with <a href="http://en.wikipedia.org/wiki/Textile_(markup_language)">Textile</a>, but that&#8217;s 100%&nbsp;subjective.
 </p>
-
 </div>
 
 </div>
@@ -155,9 +160,7 @@ I try to sum the facts&nbsp;up:
 </p>
 <p>
 <b>Pros</b>:
-</p>
-
-<ul>
+</p><ul>
 <li>
 static &rarr; really&nbsp;fast
 </li>
@@ -180,21 +183,20 @@ OptiPNG,&nbsp;jpegoptim
 UglifyJS
 </li>
 </ul>
-
-<p></li>
+</li>
 <li>
 active&nbsp;development
 </li>
 <li>
-(it&#8217;s Python :)&nbsp;)</p>
-<p></li>
-</ul></p>
-<p><b>Cons</b>:
-</p>
+(it&#8217;s Python :)&nbsp;)
 
-<ul>
+</li>
+</ul>
+
+<p><b>Cons</b>:
+</p><ul>
 <li>
-I don&#8217;t want to call this a con, but the fact that Hyde produces static content you have to include external tools for comments,
+I don&#8217;t want to call this a con, but the fact that Hyde produces static content involves that you have to include external tools for comments,
 website statistics or other dynamic stuff. But this is a) no problem and b) not all people needs a commenting system for&nbsp;example.
 
 </li>
@@ -237,25 +239,12 @@ which hopefully will give you a better overview of Hyde&#8217;s&nbsp;features.
 
 <p>This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two&nbsp;reasons:
-</p>
-
-<ul>
+</p><ul>
 <li>
 Many Latex symbols out of the box like &forall; ,&exist; ,&alpha; ,&beta; and so&nbsp;on
 </li>
 <li>
-Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor">ascii tables</a> are exportes to html table - I never found a way to generate tables that simple
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col align="left" /><col align="left" /><col align="left" />
-</colgroup>
-<thead>
-<tr><th scope="col">H1</th><th scope="col">H2</th><th scope="col">H3</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>2</td><td>3</td></tr>
-</tbody>
-</table>
+Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor">ascii tables</a> are exported to html tables - I never found a way to generate tables that&nbsp;simple
 
 </li>
 </ul>
@@ -286,7 +275,7 @@ Orgmodes <a href="http://orgmode.org/manual/Built_002din-table-editor.html#Built
 </pre>
 
 <p>
-You also have to define the project in a config file of Emacs. In my case it looks like&nbsp;this:
+You also have to define the project in a config file of Emacs like&nbsp;this:
 </p>
 
 <pre class="src src-emacs-lisp">(setq org-publish-project-alist
@@ -308,7 +297,6 @@ You also have to define the project in a config file of Emacs. In my case it loo
 This means I write my articles in the org directory. After that I export (C-c C-e X) the project (the articles) to content/blog directory. And from
 there Hyde uses the generated html files for&nbsp;deploying. 
 </p>
-
 </div>
 
 </div>
@@ -317,11 +305,11 @@ there Hyde uses the generated html files for&nbsp;deploying.
 <h4 id="sec-3.2"><span class="caps">YAML</span>&nbsp;settings </h4>
 <div class="outline-text-4" id="text-3.2">
 
-<p>Each article can contain yaml settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
+<p>Each article can contain <span class="caps">YAML</span> settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
 should export to html you can use the <code>#+BEGIN_HTML</code> directive. So this article for example starts&nbsp;with:
 </p>
 
-<pre class="src src-yaml"> #+BEGIN_HTML
+<pre class="src src-yaml">#+BEGIN_HTML
 ---
 ---
 title: Moving from Textpattern to Hyde
@@ -334,19 +322,21 @@ tags:
 </pre>
 
 <p>
-Note: Normally there would be only one &#8220;&mdash;&#8221; line above <code>title</code>, but Orgmode removes the first line in my case so this is a little&nbsp;hack.
-</p>
-<p>
-Now you should be able to easily write your content with Orgmode and let it serve by&nbsp;Hyde.
-</p>
+<b>Note</b>: 
+</p><ul>
+<li>
+Normally there would be only one &#8220;&mdash;&#8221; line above <code>title</code>, but Orgmode removes the first line in my case. So this is a little&nbsp;hack.
+</li>
+<li>
+Don&#8217;t forget the <code>END_HTML</code> after the last line. But somehow this is ommited after export&nbsp;:(
 
-<p>
-<i>So, I hope I could give a little overview about Hyde and its features. And maybe someone will find the Orgmode part&nbsp;useful.</i>
-</p>
+</li>
+</ul>
 
-<p></div>
+<p>Now you should be able to easily write your content with Orgmode and let it serve by Hyde. Hope this is useful to&nbsp;someone.
+</p></div>
 </div>
-</div></p></article>
+</div></article>
 <br/>
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
@@ -356,7 +346,22 @@ Now you should be able to easily write your content with Orgmode and let it serv
 <a class="addthis_counter addthis_pill_style"></a>
 </div>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e7f672c4d4f3292"></script>
-<!-- AddThis Button END -->          </section>
+<!-- AddThis Button END -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kendix';
+    var disqus_identifier = "Moving from Textpattern to Hyde and integrating Orgmode";
+    var disqus_url = "http://kendix.org/blog/moving_from_textpattern_to_hyde";
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>          </section>
       </div>
       </div> <!--! end of #container -->
   

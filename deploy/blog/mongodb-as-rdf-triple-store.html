@@ -39,7 +39,7 @@ $(document).ready(function(){
     <div id="container">
             <div id="main" role="main">
           <header class="banner clearfix">
-          <h1>Hello World.</h1>                              <nav class=main_nav>
+          <h1><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></h1>                              <nav class=main_nav>
     <ul>
                 <li>
             <a title="Home Page"
@@ -117,7 +117,7 @@ $(document).ready(function(){
     </a>
 </li>
 </ul>
-<img style="float:right;" src="http://kendix.org/media/images/13.png" />
+<img style="float:right;padding-left:5px;" src="http://kendix.org/media/images/13.png" />
 <p>This is a short summary of my <a href="/media/files/thesis.pdf">bachelor thesis</a> that was written in German. Maybe someone else is interested in the&nbsp;results.</p>
 <h2>About</h2>
 <p>The topic of the thesis was “Implementing a <span class="caps">RDF</span> storage solution for <a href="http://mongodb.org/">MongoDB</a>”. Besides this implementation part the performance of the written <span class="caps">API</span> was compared to <a href="http://www.openlinksw.com/dataspace/dav/wiki/Main/">Virtuoso Open-Source</a>.</p>
@@ -280,7 +280,22 @@ You can find the written <span class="caps">API</span> for <a href="http://nodej
 <a class="addthis_counter addthis_pill_style"></a>
 </div>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e7f672c4d4f3292"></script>
-<!-- AddThis Button END -->          </section>
+<!-- AddThis Button END -->
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kendix';
+    var disqus_identifier = "MongoDB as RDF triple store based on Node.js";
+    var disqus_url = "http://kendix.org/blog/mongodb-as-rdf-triple-store";
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>          </section>
       </div>
       </div> <!--! end of #container -->
   
