@@ -28,7 +28,7 @@
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
   {% endblock headjs %}
-        {% block js %}
+      {% block js %}
   <!-- Javascript at the bottom for fast page loading -->
   {% block jquery %}
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
@@ -45,7 +45,8 @@
   {% block content %}
   <div id="container">
       {% block container %}
-      <div id="main" role="main">
+      <!-- <div id="main" role="main"> -->
+	<div id="main">
           <header class="banner clearfix">
           {% block header -%}
             <h1><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></h1>
