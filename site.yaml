@@ -78,7 +78,7 @@ urlcleaner:
 publisher:
     strato:
         type: hyde.ext.publishers.pyfs.PyFS
-        url: ftp://www.sek-leipzig.de:$3K_le!PziG2k9@www.sek-leipzig.de/subdomains/mn/
+        url: ftp://www.sek-leipzig.de:;:yxsE&5BYJel=@www.sek-leipzig.de/subdomains/mn/
 
 less:
-    app: /usr/local/bin/lessc
+    app: /usr/bin/lessc
