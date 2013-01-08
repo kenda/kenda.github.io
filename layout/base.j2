@@ -5,28 +5,29 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   {% block starthead %}{% endblock starthead %}
-  <meta charset="utf-8"><!-- {{ resource.meta.charset }}"> -->
-
-  <title>{% block title %}{{ resource.meta.name }}{% if resource.meta.title %} - {{ resource.meta.title }}{% endif %}{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
   <meta name="description" content="{{ resource.meta.description }}">
   <meta name="author" content="{{ resource.meta.author }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>{% block title %}{{ resource.meta.name }}{% if resource.meta.title %} - {{ resource.meta.title }}{% endif %}{% endblock %}</title>
   {% block favicons %}
   <link rel="shortcut icon" href="{{ media_url('/favicon.ico') }}">
   {% endblock favicons %}
 
   {% block css %}
-  <link rel="stylesheet" href="{{ media_url('css/site.css') }}">
   <link rel="stylesheet" href="{{ media_url('css/syntax.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/bootstrap-responsive.css') }}">
+  <link rel="stylesheet" href="{{ media_url('css/site.css') }}">
   <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet'  type='text/css' />
   {% endblock css %}
 
   {% block headjs %}
-  <!-- All JavaScript at the bottom, except for Modernizr which
-        enables HTML5 elements & feature detects -->
-    <script src="{{ media_url('js/libs/modernizr-1.7.min.js') }}"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
+  <script src="{{ media_url('js/libs/modernizr-1.7.min.js') }}"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="{{ media_url('js/libs/bootstrap.min.js') }}"></script>
   {% endblock headjs %}
       {% block js %}
   <!-- Javascript at the bottom for fast page loading -->
@@ -41,26 +42,22 @@
 
   {% block endhead %}{% endblock endhead %}
 </head>
-<body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+  <body id="{{ resource.meta.id if resource.meta.id else resource.slug }}">
+    <header class="clearfix">
+      {% block header -%}{%- endblock %}
+      {% block nav %}
+      {% from "macros.j2" import render_nav with context %}
+      {{ render_nav(menu, 'main_nav') }}
+      {% endblock %}
+    </header>
+
   {% block content %}
-  <div id="container">
+  <div class="container" id="container">
       {% block container %}
-      <!-- <div id="main" role="main"> -->
-	<div id="main">
-          <header class="banner clearfix">
-          {% block header -%}
-            <h1><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></h1>
-          {%- endblock %}
-          {% block nav %}
-          {% from "macros.j2" import render_nav with context %}
-          {{ render_nav(menu, 'main_nav') }}
-          {% endblock %}
-          </header>
           <section class="content">
           {% block main %}
           {% endblock main %}
           </section>
-      </div>
     {% endblock container %}
   </div> <!--! end of #container -->
   {% endblock content%}
@@ -71,11 +68,6 @@
 	<img src="{{ media_url('images/cc.png') }}" alt="Creative Commons Lizenzvertrag" title="all content under CC BY-SA" width="48" height="48" />
       </a>
     </span>
-    <!-- <span id="rss"> -->
-    <!--   <a href="http://www.kendix.org/rss/?section=about" title="RSS Feed"> -->
-    <!-- 	<img src="http://www.kendix.org/images/7.png" alt="RSS feed" title="RSS feed" width="48" height="47" /> -->
-    <!--   </a> -->
-    <!-- </span> -->
     <span id ="atom">
       <a href="/blog/atom.xml" title="Atom Feed">
 	<img src="{{ media_url('images/atom.png') }}" alt="Atom feed" title="Atom feed" width="48" height="47" />

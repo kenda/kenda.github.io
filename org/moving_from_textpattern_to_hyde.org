@@ -23,13 +23,13 @@ I'm happy with Hyde :)
 {%- endmark %}
 #+END_HTML
 
-** Textpattern
+*** Textpattern
 What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
 several 'forms' which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
 Because it is so easy to extend the structure it was very easy to implement [[http://en.wikipedia.org/wiki/RDFa][RDFa]]. Nevertheless I felt Textpattern
 is a bit moldy and I couldn't really cotton up with [[http://en.wikipedia.org/wiki/Textile_(markup_language)][Textile]], but that's 100% subjective.
 
-** Hyde
+*** Hyde
 Hyde is a static website generator originally based on [[http://djangoproject.com][Django]]. It can be seen as the Python equivalent of [[http://jekyllrb.com/][Jekyll]] which is written
 in Ruby. Because I was working with Django for 2 years, I really like that Hyde is using the [[http://jinja.pocoo.org/docs/][Jinja2]] template engine which
 is modelled after Django's. Near this fact I mainly chose Hyde because it is incredibly fast cause its pure static html. And a last
@@ -62,13 +62,13 @@ which hopefully will give you a better overview of Hyde's features.
     - [[http://merlin.rebrovic.net/hyde-starter-kit/][Hyde Starter Kit]]
     - [[http://stevelosh.com/blog/2010/01/moving-from-django-to-hyde/]["Moving from Django to Hyde"]] by Steve Losh
 
-** Orgmode and Hyde
+*** Orgmode and Hyde
 This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
 [[http://daringfireball.net/projects/markdown/][Markdown]] or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two reasons:
 - Many Latex symbols out of the box like \forall ,\exists ,\alpha ,\beta and so on
 - Orgmodes [[http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor][ascii tables]] are exported to html tables - I never found a way to generate tables that simple
 
-*** Project structure
+**** Project structure
 It is advisable to organize your website in an Orgmode project. My folder structure looks like this:
 #+begin_src plain
 |-- content
@@ -108,7 +108,7 @@ You also have to define the project in a config file of Emacs like this:
 This means I write my articles in the org directory. After that I export (C-c C-e X) the project (the articles) to content/blog directory. And from
 there Hyde uses the generated html files for deploying. 
 
-*** YAML settings
+**** YAML settings
 Each article can contain YAML settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
 should export to html you can use the =#+BEGIN_HTML= directive. So this article for example starts with:
 #+begin_src yaml

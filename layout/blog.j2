@@ -29,11 +29,11 @@ $(document).ready(function(){
     Next
 </a>
 </nav>
-<h1 class="title">
+<h3 class="title">
     <a href="{{ content_url(resource.url) }}">
         {{ resource.meta.title }}
     </a>
-</h1>
+</h3>
 
 {% if resource.meta.created %}
 <time datetime="{{ resource.meta.created.strftime('%Y-%m-%d') }}">

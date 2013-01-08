@@ -8,18 +8,21 @@ default_block: main
 <p>
   This is the virtual home of Marcus Nitzschke. Here you can find informations about his projects and other stuff. <br/>
 
-  <b>Note</b>: there might be parts in German.
-</p><br/>
+  <strong>Note</strong>: there might be parts in German.
+</p>
 
-<div class="bg_button">
-  <h2>recent activities</h2>
-</div>
+<ul class="breadcrumb">
+  <li class="active"><h2>recent activities</h2></li>
+</ul>
+<!-- <div class="bg_button"> -->
+<!--   <h2>recent activities</h2> -->
+<!-- </div> -->
+
 <div style="margin-top:40px;margin-bottom:20px;text-align:center;" id="ajax_loader">
   <img src="{{ media_url('images/ajax-loader.gif') }}" />
 </div>
 <div id="lifestream">
 </div>
-
 <script src="{{ media_url('js/libs/jquery.simple_lifestream.js') }}"></script>
 <script src="https://www.google.com/jsapi?key=ABQIAAAAC_3a8ZUfOJxy-EatPC4qaRRimDksKHn9Oe1GWLfZwxBDKHSm0BQufL2Fg030USM3BOx6xr6N6cQVdA" type="text/javascript"></script>
 <script type="text/javascript">
@@ -48,10 +51,12 @@ default_block: main
 </noscript>
 
 
-<br/>
-<div class="bg_button">
-  <h2>recent articles</h2>
-</div>
+<ul class="breadcrumb">
+  <li class="active"><h2>recent articles</h2></li>
+</ul>
+<!-- <div class="bg_button"> -->
+<!--   <h2>recent articles</h2> -->
+<!-- </div> -->
 
   <ul class="listing clear">
 

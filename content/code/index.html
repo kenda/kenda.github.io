@@ -38,34 +38,38 @@
       .exhibit-facet-header-filterControl{
         display: none !important;
       }
-      .listing{
+      .exhibit-thumbnailView-itemContainer{
+        float: none !important;
+      }
+     /* .listing{
         margin-top: 0px;
       margin-bottom: 0px;
-      }
+      }*/
       .listing article{
-        width: 588px;
+        width: 100%;
       }
     </style>
 {% endblock %}
 
 {% block main -%}
 
-<div class="bg_button">
-  <h2>Projects</h2>
-</div><br/><br/>
+<ul class="breadcrumb">
+  <li class="active"><h2>Projects</h2></li>
+</ul>
+<br/><br/>
       <div ex:role="collection" ex:itemTypes="Project"></div>
-      <div style="width:610px;margin-left:40px">
-	<div style="width:50%;float:left" ex:height="70px" ex:role="facet" ex:expression=".license" ex:facetLabel="Filter by license"></div>
-	<div style="width:50%;float:right" ex:height="70px" ex:role="facet" ex:expression=".programming-language" ex:facetLabel="Filter by language"></div>
+      <div style="margin: auto 25px auto 25px">
+	<div style="width:50%;float:left" ex:height="75px" ex:role="facet" ex:expression=".license" ex:facetLabel="Filter by license"></div>
+	<div style="width:50%;float:right" ex:height="75px" ex:role="facet" ex:expression=".programming-language" ex:facetLabel="Filter by language"></div>
       </div>
 
 	
-      <div ex:showHeader="false" ex:orders=".name" ex:role="view" ex:viewClass="Thumbnail">
+      <div ex:showHeader="false" ex:orders=".name" ex:role="view" ex:viewClass="Thumbnail" style="clear:both">
 	<div ex:role="exhibit-lens" style="display:none;">
 	  <ul class="listing clear">
 	    <li>
 	      <article>
-		<h3>
+		<h3 class="title">
 		  <span ex:content=".name"></span>
 		</h3>
 		<i><span ex:content=".shortdesc"></span></i>
@@ -88,9 +92,9 @@
 
 
 {% markdown %}
-<div class="bg_button">
-  <h2>Patches, Scripts etc.</h2>
-</div>
+<ul class="breadcrumb">
+  <li class="active"><h2>Patches, Scripts etc.</h2></li>
+</ul>
 - goobook - [78a441bb](http://gitorious.org/goobook/mainline/commit/78a441bb94932e6d9929e1ce834ce75699e83513)
 - [fortune-protolol](https://github.com/kenda/fortune-protolol) - Fortune file for #protolol quotes
 

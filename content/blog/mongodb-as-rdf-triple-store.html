@@ -12,7 +12,7 @@ image: http://kendix.org/media/images/13.png
 
 This is a short summary of my [bachelor thesis]({{ media_url('files/thesis.pdf') }}) that was written in German. Maybe someone else is interested in the results.
 
-## About
+#### About
 
 The topic of the thesis was “Implementing a RDF storage solution for [MongoDB](http://mongodb.org/)”. Besides this implementation part the performance of the written API was compared to [Virtuoso Open-Source](http://www.openlinksw.com/dataspace/dav/wiki/Main/).
 
@@ -20,16 +20,16 @@ So, to summarize this thesis, the main question is “Could MongoDB be an altern
 
 {%- endmark %}
 
-## Implementation
+#### Implementation
 
 There was prior work on this topic such as [this](http://wwaites.posterous.com/mongo-as-an-rdf-store) or [that](http://www.dotnetrdf.org/blogitem.asp?blogID=35) but no scientific evaluation of the systems.
 You can find the written API for [Node.js](http://nodejs.org/) [here](https://github.com/kenda/node_mongo_rdf). It mainly implements an insert method and some query methods. For details take a look at the README. There are also explanations about the URI transformation methods that avoids dots in the key identifier of the JSON objects.
 
-## Evaluation
+#### Evaluation
 
 A short explanation of the systems and the data sets.
 
-### systems
+##### systems
 
 *nested* a.k.a *flat*: MongoDB implementation with the nested uri transformation
 
@@ -39,8 +39,8 @@ A short explanation of the systems and the data sets.
 
 *virtHttp*: Virtuoso via HTTP
 
-### data sets
-<table style="margin-left:20px;">
+##### data sets
+<table class="table table-condensed table-striped table-bordered">
   <tbody><tr>
       <th>abbr. </th>
       <th>subjects </th>
@@ -74,10 +74,10 @@ A short explanation of the systems and the data sets.
   </tbody>
 </table>
 
-#### Insert
+###### Insert
 <a href="http://www.kendix.org/media/images/11.png" class="fancy"><img src="http://www.kendix.org/media/images/11.png" class="fancy" alt="Insert results" /></a>
 
-<table style="margin-left:10px;">
+<table class="table table-condensed table-striped table-bordered">
   <tbody><tr>
       <th></th>
       <th>nested </th>
@@ -125,10 +125,10 @@ A short explanation of the systems and the data sets.
 
 As you can see, both MongoDB implementations are extremely slow inserting the triples. There are differences of 15 minutes and more! But it’s hard to say what the reasons for this results are. Because of the [mentioned](http://www.dotnetrdf.org/blogitem.asp?blogID=35) article which presents similar results, we can only guess that MongoDB itself is the reason and not the implementations. Maybe it has something to do with updating the indices.
 
-#### Query
+###### Query
 
 <a href="http://www.kendix.org/media/images/12.png" class="fancy"><img src="http://www.kendix.org/media/images/12.png" alt="Query results" /></a>
-<table style="margin-left:10px;">
+<table class="table table-condensed table-striped table-bordered">
   <tbody><tr>
       <th></th>
       <th>nested </th>
@@ -178,7 +178,7 @@ The results of the probably most used query method findBySubject() are quite bet
 
 For the results of the other query methods, please take a look in the thesis.
 
-## Conclusion
+#### Conclusion
 
 1. The implementation dict is continously the slowest one.
 2. The implementation nested is in four of five query methods faster than Virtuoso via HTTP

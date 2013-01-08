@@ -24,9 +24,9 @@ I'm happy with Hyde :)
 {%- endmark %}
 
 
-<div id="outline-container-1" class="outline-3">
-<h3 id="sec-1">Textpattern</h3>
-<div class="outline-text-3" id="text-1">
+<div id="outline-container-1" class="outline-4">
+<h4 id="sec-1">Textpattern</h4>
+<div class="outline-text-4" id="text-1">
 
 <p>What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
 several 'forms' which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
@@ -37,9 +37,9 @@ is a bit moldy and I couldn't really cotton up with <a href="http://en.wikipedia
 
 </div>
 
-<div id="outline-container-2" class="outline-3">
-<h3 id="sec-2">Hyde</h3>
-<div class="outline-text-3" id="text-2">
+<div id="outline-container-2" class="outline-4">
+<h4 id="sec-2">Hyde</h4>
+<div class="outline-text-4" id="text-2">
 
 <p>Hyde is a static website generator originally based on <a href="http://djangoproject.com">Django</a>. It can be seen as the Python equivalent of <a href="http://jekyllrb.com/">Jekyll</a> which is written
 in Ruby. Because I was working with Django for 2 years, I really like that Hyde is using the <a href="http://jinja.pocoo.org/docs/">Jinja2</a> template engine which
@@ -90,12 +90,13 @@ At this point could be a lot more interesting stuff about Hyde, like the possibl
 the website to different sources like git repositories, S3, a zip file or normal ftp locations. For this further knowledge I try to collect some resources
 which hopefully will give you a better overview of Hyde's features.
 </p>
+</div>
 
 </div>
 
-<div id="outline-container-2-1" class="outline-4">
-<h4 id="sec-2-1">Resources</h4>
-<div class="outline-text-4" id="text-2-1">
+<div id="outline-container-3" class="outline-4">
+<h4 id="sec-3">Resources</h4>
+<div class="outline-text-4" id="text-3">
 
 <ul>
 <li><a href="http://hyde.github.com/">Documentation</a>
@@ -110,13 +111,12 @@ which hopefully will give you a better overview of Hyde's features.
 
 
 </div>
-</div>
 
 </div>
 
-<div id="outline-container-3" class="outline-3">
-<h3 id="sec-3">Orgmode and Hyde</h3>
-<div class="outline-text-3" id="text-3">
+<div id="outline-container-4" class="outline-4">
+<h4 id="sec-4">Orgmode and Hyde</h4>
+<div class="outline-text-4" id="text-4">
 
 <p>This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
 <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two reasons:
@@ -131,15 +131,15 @@ which hopefully will give you a better overview of Hyde's features.
 
 </div>
 
-<div id="outline-container-3-1" class="outline-4">
-<h4 id="sec-3-1">Project structure</h4>
-<div class="outline-text-4" id="text-3-1">
+<div id="outline-container-4-1" class="outline-5">
+<h5 id="sec-4-1">Project structure</h5>
+<div class="outline-text-5" id="text-4-1">
 
 <p>It is advisable to organize your website in an Orgmode project. My folder structure looks like this:
 </p>
 
 
-<pre class="example">|-- content
+<pre class="src src-plain">|-- content
 |   |-- about
 |   |-- blog
 |   |-- code
@@ -162,17 +162,17 @@ You also have to define the project in a config file of Emacs like this:
 
 
 
-<pre class="example">(setq org-publish-project-alist
+<pre class="src src-emacs-lisp">(setq org-publish-project-alist
       '(
-        ("kendix.org"
-         :base-directory "~/Code/websites/kendix.org/org/"
-         :base-extension "org"
-         :publishing-directory "~/Code/websites/kendix.org/content/blog"
-         :recursive t
-         :publishing-function org-publish-org-to-html
-         :headline-levels 4 
-         :html-extension "html"
-         :body-only t ;; Only export section between &lt;body&gt; &lt;/body&gt;
+        (<span style="color: #2aa198;">"kendix.org"</span>
+         <span style="color: #268bd2; font-style: italic;">:base-directory</span> <span style="color: #2aa198;">"~/Code/websites/kendix.org/org/"</span>
+         <span style="color: #268bd2; font-style: italic;">:base-extension</span> <span style="color: #2aa198;">"org"</span>
+         <span style="color: #268bd2; font-style: italic;">:publishing-directory</span> <span style="color: #2aa198;">"~/Code/websites/kendix.org/content/blog"</span>
+         <span style="color: #268bd2; font-style: italic;">:recursive</span> t
+         <span style="color: #268bd2; font-style: italic;">:publishing-function</span> org-publish-org-to-html
+         <span style="color: #268bd2; font-style: italic;">:headline-levels</span> 4 
+         <span style="color: #268bd2; font-style: italic;">:html-extension</span> <span style="color: #2aa198;">"html"</span>
+         <span style="color: #268bd2; font-style: italic;">:body-only</span> t <span style="color: #93a1a1;">;; </span><span style="color: #93a1a1;">Only export section between &lt;body&gt; &lt;/body&gt;</span>
          )
 ))
 </pre>
@@ -186,25 +186,26 @@ there Hyde uses the generated html files for deploying.
 
 </div>
 
-<div id="outline-container-3-2" class="outline-4">
-<h4 id="sec-3-2">YAML settings</h4>
-<div class="outline-text-4" id="text-3-2">
+<div id="outline-container-4-2" class="outline-5">
+<h5 id="sec-4-2">YAML settings</h5>
+<div class="outline-text-5" id="text-4-2">
 
 <p>Each article can contain YAML settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
 should export to html you can use the <code>#+BEGIN_HTML</code> directive. So this article for example starts with:
 </p>
 
 
-<pre class="example">#+BEGIN_HTML
----
----
-title: Moving from Textpattern to Hyde
-created: !!timestamp '2012-01-18 16:55:00'
-tags:
+<pre class="src src-yaml"><span style="color: #93a1a1;">#</span><span style="color: #93a1a1;">+BEGIN_HTML</span>
+<span style="color: #93a1a1;">---</span>
+<span style="color: #93a1a1;">---</span>
+<span style="color: #268bd2;">title</span>: Moving from Textpattern to Hyde
+<span style="color: #268bd2;">created</span>: <span style="color: #b58900;">!!timestamp</span> <span style="color: #2aa198;">'2012-01-18 16:55:00'</span>
+<span style="color: #268bd2;">tags</span>:
 - textpattern
 - hyde
 - python
----
+<span style="color: #93a1a1;">---</span>
+<span style="color: #93a1a1;">#</span><span style="color: #93a1a1;">+END_HTML</span>
 </pre>
 
 <p>
