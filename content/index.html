@@ -30,11 +30,12 @@ default_block: main
     $().ready(function(){
 	$("#lifestream").lifestream({
 	    "feeds" : [
-		"http://www.kendix.org/atom/",
-		"http://github.com/kenda.atom",
-		"http://identi.ca/kenda/rss",
-		"http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=adn3k",
-		"http://api.flickr.com/services/feeds/photos_public.gne?id=42537411@N07&lang=de-de&format=rss_200"
+	      "http://www.kendix.org/atom/",
+	      "http://kendix.disqus.com/latest.rss",
+	      "http://github.com/kenda.atom",
+	      "http://identi.ca/kenda/rss",
+	      "http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=adn3k",
+	      "http://api.flickr.com/services/feeds/photos_public.gne?id=42537411@N07&lang=de-de&format=rss_200"
 	    ],
 	    "count" : 5,
 	}, function(){
