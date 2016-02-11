@@ -63,16 +63,16 @@ sorter:
         filters:
             source.kind: html
             meta.listable: true
-tagger:
-    sorter: time
-    archives:
-        blog:
-            source: blog
-            target: blog/tags
-            template: tagged_posts.j2
-            archive_extension: html
-            meta:
-                listable: false
+#tagger:
+#    sorter: time
+#    archives:
+#        blog:
+#            source: blog
+#            target: blog/tags
+#            template: tagged_posts.j2
+#            archive_extension: html
+#            meta:
+#                listable: false
 
 urlcleaner:
     index_file_names:
@@ -86,7 +86,7 @@ publisher:
         url: ftp://www.sek-leipzig.de:;:yxsE&5BYJel=@www.sek-leipzig.de/subdomains/mn/
     github:
         type: hyde.ext.publishers.dvcs.Git
-        path: deploy
+        path: ./deploy
         url: git@github.com:kenda/kenda.github.io.git
 less:
     app: /usr/bin/lessc
