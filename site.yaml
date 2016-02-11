@@ -22,13 +22,13 @@ context:
                 type: page
                 url: index.html
                 icon: icon-home
-            -
-                name: about
-                description: About
-                css_class: about
-                type: node
-                url: about
-                icon: icon-user
+            # -
+            #     name: about
+            #     description: About
+            #     css_class: about
+            #     type: node
+            #     url: about
+            #     icon: icon-user
             -
                 name: blog
                 description: Blog
@@ -36,25 +36,25 @@ context:
                 type: node
                 url: blog
                 icon: icon-pencil
-            -
-                name: code
-                description: Code
-                css_class: code
-                type: node
-                url: code
-                icon: icon-cog
-            -
-                name: study
-                description: Study
-                css_class: study
-                type: node
-                url: study
-                icon: icon-book
+            # -
+            #     name: code
+            #     description: Code
+            #     css_class: code
+            #     type: node
+            #     url: code
+            #     icon: icon-cog
+            # -
+            #     name: study
+            #     description: Study
+            #     css_class: study
+            #     type: node
+            #     url: study
+            #     icon: icon-book
 meta:
     nodemeta: meta.yaml
     created: !!timestamp 2010-01-01 00:00:00
     author: Marcus Nitzschke
-    name: Hello World
+    name: Marcus Nitzschke
 sorter:
     time:
         attr:

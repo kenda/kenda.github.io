@@ -9,6 +9,7 @@
 <a href="{{ content_url(res.url) }}" class="excerpt_image"><img src="{{ res.meta.image }}" /></a>
 {{ post.excerpt|markdown|typogrify }}
 <br/>
+<div style="clear:both"></div>
 <a href="{{ content_url(res.url) }}" style="font-size:0.8em;">read all</a>
 </article>
 
@@ -19,7 +20,7 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
   <div class="container">
-    <a class="brand" href="/"><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></a>
+    <!--<a class="brand" href="/"><span style="color:#A64116;">Hello</span> <span style="color:#A68916;">World.</span></a>-->
     <ul class="nav">
       {% for item in menu -%}
         {% set active = False -%}
