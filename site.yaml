@@ -84,6 +84,9 @@ publisher:
     strato:
         type: hyde.ext.publishers.pyfs.PyFS
         url: ftp://www.sek-leipzig.de:;:yxsE&5BYJel=@www.sek-leipzig.de/subdomains/mn/
-
+    github:
+        type: hyde.ext.publishers.dvcs.Git
+        path: deploy
+        url: git@github.com:kenda/kenda.github.io.git
 less:
     app: /usr/bin/lessc

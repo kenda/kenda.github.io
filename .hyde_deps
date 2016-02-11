@@ -18,7 +18,7 @@
 !!python/unicode 'blog/presentations-with-orgmode-and-beamer-class.html': [blog.j2,
   macros.j2, base.j2]
 !!python/unicode 'blog/sad-post.html': [blog.j2, macros.j2, base.j2]
-!!python/unicode 'blog/tags/Emacs.html': [base.j2, macros.j2, tagged_posts.j2]
+!!python/unicode 'blog/tags/Emacs.html': [macros.j2, base.j2, tagged_posts.j2]
 !!python/unicode 'blog/tags/Hyde.html': [base.j2, macros.j2, tagged_posts.j2]
 !!python/unicode 'blog/tags/LibreOffice.html': [base.j2, macros.j2, tagged_posts.j2]
 !!python/unicode 'blog/tags/MongoDB.html': [base.j2, macros.j2, tagged_posts.j2]
@@ -55,6 +55,8 @@
 !!python/unicode 'media/css/bootstrap-responsive.min.css': []
 !!python/unicode 'media/css/bootstrap.css': []
 !!python/unicode 'media/css/bootstrap.min.css': []
+!!python/unicode 'media/css/font-awesome-social.css': []
+!!python/unicode 'media/css/font-awesome.min.css': []
 !!python/unicode 'media/css/jquery.fancybox-1.3.4.css': []
 !!python/unicode 'media/css/site.css': []
 !!python/unicode 'media/css/site.less': []
