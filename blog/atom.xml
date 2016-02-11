@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Atom feed of kendix.org    </title>
+        <link href="blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2016-02-11T21:00:37Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">My public Emacs config</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/my_public_emacs_config"/>
+            <updated>2014-12-14T23:00:00Z</updated>
+            <published>2014-12-14T23:00:00Z</published>
+            <id>/blog/my_public_emacs_config</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                                &lt;p&gt;
+After months, I finally got my Emacs config published. It is now available on &lt;a href=&#34;https://github.com/kenda/.emacs.d&#34;&gt;Github&lt;/a&gt;. So check out the &lt;a href=&#34;https://github.com/kenda/.emacs.d/blob/master/config.org&#34;&gt;config.org&lt;/a&gt; file for the main configuration. If you found interesting parts or ideas for improvements - just leave a comment below&amp;nbsp;:)
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Basic Emacs-keybindings for LibreOffice Writer</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/basic_emacs_bindings_for_libreoffice_writer"/>
+            <updated>2012-06-08T12:00:00Z</updated>
+            <published>2012-06-08T12:00:00Z</published>
+            <id>/blog/basic_emacs_bindings_for_libreoffice_writer</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="LibreOffice"
+                        label="Libreoffice" />
+            
+            <content type="html">
+                                &lt;p&gt;
+Although I try to avoid to use word processors like LibreOffice Writer, sometimes   - mainly for collaboration purposes - I have to fall back on them. And in such hard
+times I want to have at least some useful keybindings. Because I couldn&amp;#8217;t find any downloads that provide Emacs bindings for OpenOffice/LibreOffice Writer
+I configured the basic bindings which you can download &lt;a href=&#34;../../media/files/writer_bindings_emacs.zip&#34;&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Currently supported/implemented bindings&amp;nbsp;are:
+&lt;/p&gt;
+
+&lt;table border=&#34;2&#34; cellspacing=&#34;0&#34; cellpadding=&#34;6&#34; rules=&#34;groups&#34; frame=&#34;hsides&#34;&gt;
+
+&lt;colgroup&gt;
+&lt;col class=&#34;left&#34;/&gt;
+
+&lt;col class=&#34;left&#34;/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope=&#34;col&#34; class=&#34;left&#34;&gt;Binding&lt;/th&gt;
+&lt;th scope=&#34;col&#34; class=&#34;left&#34;&gt;Function&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-f&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;forward-char&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-b&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;backward-char&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-n&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;next-line&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-p&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;previous-line&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;M-f&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;forward-word&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;M-b&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;backward-word&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-v&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;next page&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;M-v&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;previous page&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-a&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;beginning-of-line&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-e&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;end-of-line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;C-k&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;kill-line&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;M-d&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;kill-word&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class=&#34;left&#34;&gt;M-backspace&lt;/td&gt;
+&lt;td class=&#34;left&#34;&gt;backward-kill-word&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+To load the archive go to Tools &amp;rarr; Customize &amp;rarr; Keyboard &amp;rarr;&amp;nbsp;Load&amp;#x2026;
+&lt;/p&gt;
+
+&lt;p&gt;
+Maybe the supported bindings grow from time to time. But as a starting point these are my personally most often used basic&amp;nbsp;keybindings.
+&lt;/p&gt;
+
+&lt;p&gt;
+Feel free to add your own ones and let me know&amp;nbsp;it.
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Moving from Textpattern to Hyde and integrating Orgmode</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/moving_from_textpattern_to_hyde"/>
+            <updated>2012-01-18T16:55:00Z</updated>
+            <published>2012-01-18T16:55:00Z</published>
+            <id>/blog/moving_from_textpattern_to_hyde</id>
+                        <category   scheme="/blog/tags"
+                        term="Textpattern"
+                        label="Textpattern" />
+                        <category   scheme="/blog/tags"
+                        term="Hyde"
+                        label="Hyde" />
+                        <category   scheme="/blog/tags"
+                        term="Python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                                &lt;p&gt;
+This post is about my switch from &lt;a href=&#34;http://textpattern.org&#34;&gt;Textpattern&lt;/a&gt; to &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt; as my website system (some call it &lt;span class=&#34;caps&#34;&gt;CMS&lt;/span&gt;&amp;nbsp;thought).
+&lt;/p&gt;
+
+&lt;p&gt;
+In the past I tried a few systems, starting with &lt;a href=&#34;http://wordpress.org&#34;&gt;Wordpress&lt;/a&gt;, then &lt;a href=&#34;http://www.dokuwiki.org/dokuwiki&#34;&gt;DokuWiki&lt;/a&gt; and then Textpattern. The reasons for this
+changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
+I&amp;#8217;m happy with Hyde&amp;nbsp;:)
+&lt;/p&gt;
+
+&lt;div id=&#34;outline-container-sec-1&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;sec-1&#34;&gt;Textpattern&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-1&#34;&gt;
+&lt;p&gt;
+What I really liked about Textpattern is the way you can customize the structure of your website. You can freely define
+several &amp;#8216;forms&amp;#8217; which are some kind of shortcuts for often used code fragments, like a header, menu or footer. 
+Because it is so easy to extend the structure it was very easy to implement &lt;a href=&#34;http://en.wikipedia.org/wiki/RDFa&#34;&gt;RDFa&lt;/a&gt;. Nevertheless I felt Textpattern
+is a bit moldy and I couldn&amp;#8217;t really cotton up with &lt;a href=&#34;http://en.wikipedia.org/wiki/Textile_(markup_language)&#34;&gt;Textile&lt;/a&gt;, but that&amp;#8217;s 100%&amp;nbsp;subjective.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;outline-container-sec-2&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;sec-2&#34;&gt;Hyde&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-2&#34;&gt;
+&lt;p&gt;
+Hyde is a static website generator originally based on &lt;a href=&#34;http://djangoproject.com&#34;&gt;Django&lt;/a&gt;. It can be seen as the Python equivalent of &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt; which is written
+in Ruby. Because I was working with Django for 2 years, I really like that Hyde is using the &lt;a href=&#34;http://jinja.pocoo.org/docs/&#34;&gt;Jinja2&lt;/a&gt; template engine which
+is modelled after Django&amp;#8217;s. Near this fact I mainly chose Hyde because it is incredibly fast cause its pure static html. And a last
+big goody is that I can write the articles with &lt;a href=&#34;http://orgmode.org/&#34;&gt;Orgmode&lt;/a&gt;, but more on this&amp;nbsp;later.
+&lt;/p&gt;
+
+&lt;p&gt;
+I try to sum the facts&amp;nbsp;up:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;Pros&lt;/b&gt;:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;static &amp;rarr; really&amp;nbsp;fast
+&lt;/li&gt;
+&lt;li&gt;uses&amp;nbsp;Jinja2
+&lt;/li&gt;
+&lt;li&gt;easy to&amp;nbsp;extend
+&lt;/li&gt;
+&lt;li&gt;existing plugins like:
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;URLcleaner
+&lt;/li&gt;
+&lt;li&gt;OptiPNG,&amp;nbsp;jpegoptim
+&lt;/li&gt;
+&lt;li&gt;UglifyJS
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;active&amp;nbsp;development
+&lt;/li&gt;
+&lt;li&gt;(it&amp;#8217;s Python :)&amp;nbsp;)
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+&lt;b&gt;Cons&lt;/b&gt;:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;I don&amp;#8217;t want to call this a con, but the fact that Hyde produces static content involves that you have to include external tools for comments,
+website statistics or other dynamic stuff. But this is a) no problem and b) not all people needs a commenting system for&amp;nbsp;example.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+At this point could be a lot more interesting stuff about Hyde, like the possible settings, or the publishers which allows to publish
+the website to different sources like git repositories, S3, a zip file or normal ftp locations. For this further knowledge I try to collect some resources
+which hopefully will give you a better overview of Hyde&amp;#8217;s&amp;nbsp;features.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;div id=&#34;outline-container-sec-3&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;sec-3&#34;&gt;Resources&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-3&#34;&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;http://hyde.github.com/&#34;&gt;Documentation&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hyde/hyde&#34;&gt;Github&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://merlin.rebrovic.net/hyde-starter-kit/&#34;&gt;Hyde Starter&amp;nbsp;Kit&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stevelosh.com/blog/2010/01/moving-from-django-to-hyde/&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;Moving from Django to Hyde&amp;#8221;&lt;/a&gt; by Steve&amp;nbsp;Losh
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-sec-4&#34; class=&#34;outline-2&#34;&gt;
+&lt;h2 id=&#34;sec-4&#34;&gt;Orgmode and&amp;nbsp;Hyde&lt;/h2&gt;
+&lt;div class=&#34;outline-text-2&#34; id=&#34;text-4&#34;&gt;
+&lt;p&gt;
+This part is about how to write articles or generally content with Orgmode. With Hyde it is basically no problem to write content with
+&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; or Textile. But I like the markup of Orgmode more than Markdown and Textile together. Here are two&amp;nbsp;reasons:
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Many Latex symbols out of the box like &amp;forall; ,&amp;exist; ,&amp;alpha; ,&amp;beta; and so&amp;nbsp;on
+&lt;/li&gt;
+&lt;li&gt;Orgmodes &lt;a href=&#34;http://orgmode.org/manual/Built_002din-table-editor.html#Built_002din-table-editor&#34;&gt;ascii tables&lt;/a&gt; are exported to html tables - I never found a way to generate tables that&amp;nbsp;simple
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;div id=&#34;outline-container-sec-4-1&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;sec-4-1&#34;&gt;Project&amp;nbsp;structure&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-4-1&#34;&gt;
+&lt;p&gt;
+It is advisable to organize your website in an Orgmode project. My folder structure looks like&amp;nbsp;this:
+&lt;/p&gt;
+&lt;div class=&#34;org-src-container&#34;&gt;
+
+&lt;pre class=&#34;src src-plain&#34;&gt;|-- content
+|   |-- about
+|   |-- blog
+|   |-- code
+|   |-- media
+|   `-- study
+|-- deploy
+|   |-- about
+|   |-- blog
+|   |-- code
+|   |-- media
+|   `-- study
+|-- layout
+`-- org
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+You also have to define the project in a config file of Emacs like&amp;nbsp;this:
+&lt;/p&gt;
+
+&lt;div class=&#34;org-src-container&#34;&gt;
+
+&lt;pre class=&#34;src src-emacs-lisp&#34;&gt;(setq org-publish-project-alist
+      &#39;(
+        (&#34;kendix.org&#34;
+         :base-directory &#34;~/Code/websites/kendix.org/org/&#34;
+         :base-extension &#34;org&#34;
+         :publishing-directory &#34;~/Code/websites/kendix.org/content/blog&#34;
+         :recursive t
+         :publishing-function org-publish-org-to-html
+         :headline-levels 4 
+         :html-extension &#34;html&#34;
+         :body-only t ;; Only export section between &amp;lt;body&amp;gt; &amp;lt;/body&amp;gt;
+         )
+))
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This means I write my articles in the org directory. After that I export (C-c C-e X) the project (the articles) to content/blog directory. And from
+there Hyde uses the generated html files for&amp;nbsp;deploying. 
+&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-sec-4-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;sec-4-2&#34;&gt;&lt;span class=&#34;caps&#34;&gt;YAML&lt;/span&gt;&amp;nbsp;settings&lt;/h3&gt;
+&lt;div class=&#34;outline-text-3&#34; id=&#34;text-4-2&#34;&gt;
+&lt;p&gt;
+Each article can contain &lt;span class=&#34;caps&#34;&gt;YAML&lt;/span&gt; settings like the title, creation timestamp or whatever. To tell Orgmode that this is no content which it
+should export to html you can use the &lt;code&gt;#+BEGIN_HTML&lt;/code&gt; directive. So this article for example starts&amp;nbsp;with:
+&lt;/p&gt;
+&lt;div class=&#34;org-src-container&#34;&gt;&lt;/p&gt;
+&lt;pre class=&#34;src src-yaml&#34;&gt;#+BEGIN_HTML
+---
+---
+title: Moving from Textpattern to Hyde
+created: !!timestamp &#39;2012-01-18 16:55:00&#39;
+tags:
+- textpattern
+- hyde
+- python
+---
+#+END_HTML
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;p&gt;
+&lt;b&gt;Note&lt;/b&gt;: 
+&lt;/p&gt;
+&lt;ul class=&#34;org-ul&#34;&gt;
+&lt;li&gt;Normally there would be only one &amp;#8220;&amp;#x2014;&amp;#8221; line above &lt;code&gt;title&lt;/code&gt;, but Orgmode removes the first line in my case. So this is a little&amp;nbsp;hack.
+&lt;/li&gt;
+&lt;li&gt;Don&amp;#8217;t forget the &lt;code&gt;END_HTML&lt;/code&gt; after the last line. But somehow this is ommited after export&amp;nbsp;:(
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;
+Now you should be able to easily write your content with Orgmode and let it serve by Hyde. Hope this is useful to&amp;nbsp;someone.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Save useful time by writing presentations with Orgmode and Beamer class</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/presentations-with-orgmode-and-beamer-class"/>
+            <updated>2011-10-29T00:00:00Z</updated>
+            <published>2011-10-29T00:00:00Z</published>
+            <id>/blog/presentations-with-orgmode-and-beamer-class</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                                &lt;p&gt;I just wanted to share my happiness about a new workflow for writing presentations. I couldn’t believe how quick I got useful slides by writing my notes with Emacs’ &lt;a href=&#34;http://orgmode.org/&#34;&gt;Orgmode&lt;/a&gt;. So, here it&amp;nbsp;is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do some research or brainstorming or whatever and take notes with&amp;nbsp;Orgmode&lt;/li&gt;
+&lt;li&gt;Do a little cleanup on the structure of your notes so that you get a useful &lt;a href=&#34;http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html#sec-3&#34;&gt;structure&lt;/a&gt; of your&amp;nbsp;slides&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://orgmode.org/manual/Exporting.html&#34;&gt;Export&lt;/a&gt; your notes with the LaTeX &lt;a href=&#34;https://bitbucket.org/rivanvx/beamer/&#34;&gt;Beamer class&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;You may have to append the defintion for beamer class to org-export-latex-classes. Here is &lt;a href=&#34;https://gist.github.com/1324351&#34;&gt;my&lt;/a&gt;&amp;nbsp;definition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it!
+This means you don’t waste any time with creating your slides and you can concentrate 100% on the content. I’m sure that’s (even more) faster than writing pure LaTeX and faster, nicer, … than [Open|Libre]Office/&lt;span class=&#34;caps&#34;&gt;PPT&lt;/span&gt; anyway. Don’t know what to do with the whole time, but thanks Orgmode!&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;Further&amp;nbsp;reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html&#34;&gt;http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://orgmode.org/manual/Beamer-class-export.html&#34;&gt;http://orgmode.org/manual/Beamer-class-export.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;P.S.: Yeah, two posts below this one, I wrote about Vim – just don’t care&amp;nbsp;;)&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">MongoDB as RDF triple store based on Node.js</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/mongodb-as-rdf-triple-store"/>
+            <updated>2011-09-23T00:00:00Z</updated>
+            <published>2011-09-23T00:00:00Z</published>
+            <id>/blog/mongodb-as-rdf-triple-store</id>
+                        <category   scheme="/blog/tags"
+                        term="MongoDB"
+                        label="Mongodb" />
+                        <category   scheme="/blog/tags"
+                        term="Nodejs"
+                        label="Nodejs" />
+                        <category   scheme="/blog/tags"
+                        term="RDF"
+                        label="Rdf" />
+            
+            <content type="html">
+                                &lt;p&gt;This is a short summary of my &lt;a href=&#34;/media/files/thesis.pdf&#34;&gt;bachelor thesis&lt;/a&gt; that was written in German. Maybe someone else is interested in the&amp;nbsp;results.&lt;/p&gt;
+&lt;h4&gt;About&lt;/h4&gt;
+&lt;p&gt;The topic of the thesis was “Implementing a &lt;span class=&#34;caps&#34;&gt;RDF&lt;/span&gt; storage solution for &lt;a href=&#34;http://mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;”. Besides this implementation part the performance of the written &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt; was compared to &lt;a href=&#34;http://www.openlinksw.com/dataspace/dav/wiki/Main/&#34;&gt;Virtuoso Open-Source&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So, to summarize this thesis, the main question is “Could MongoDB be an alternative to Virtuoso as triple&amp;nbsp;store?”.&lt;/p&gt;
+&lt;h4&gt;Implementation&lt;/h4&gt;
+&lt;p&gt;There was prior work on this topic such as &lt;a href=&#34;http://wwaites.posterous.com/mongo-as-an-rdf-store&#34;&gt;this&lt;/a&gt; or &lt;a href=&#34;http://www.dotnetrdf.org/blogitem.asp?blogID=35&#34;&gt;that&lt;/a&gt; but no scientific evaluation of the systems.
+You can find the written &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt; for &lt;a href=&#34;http://nodejs.org/&#34;&gt;Node.js&lt;/a&gt; &lt;a href=&#34;https://github.com/kenda/node_mongo_rdf&#34;&gt;here&lt;/a&gt;. It mainly implements an insert method and some query methods. For details take a look at the &lt;span class=&#34;caps&#34;&gt;README&lt;/span&gt;. There are also explanations about the &lt;span class=&#34;caps&#34;&gt;URI&lt;/span&gt; transformation methods that avoids dots in the key identifier of the &lt;span class=&#34;caps&#34;&gt;JSON&lt;/span&gt;&amp;nbsp;objects.&lt;/p&gt;
+&lt;h4&gt;Evaluation&lt;/h4&gt;
+&lt;p&gt;A short explanation of the systems and the data&amp;nbsp;sets.&lt;/p&gt;
+&lt;h5&gt;systems&lt;/h5&gt;
+&lt;p&gt;&lt;em&gt;nested&lt;/em&gt; a.k.a &lt;em&gt;flat&lt;/em&gt;: MongoDB implementation with the nested uri&amp;nbsp;transformation&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;dict&lt;/em&gt;: MongoDB implementation with the dict uri&amp;nbsp;transformation&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;virtNative&lt;/em&gt;: Virtuoso via &lt;span class=&#34;caps&#34;&gt;ODBC&lt;/span&gt;&amp;nbsp;interface&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;virtHttp&lt;/em&gt;: Virtuoso via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/p&gt;
+&lt;h5&gt;data&amp;nbsp;sets&lt;/h5&gt;
+&lt;p&gt;&lt;table class=&#34;table table-condensed table-striped table-bordered&#34;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+      &lt;th&gt;abbr. &lt;/th&gt;
+      &lt;th&gt;subjects &lt;/th&gt;
+      &lt;th&gt;triples &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2k&lt;/td&gt;
+      &lt;td&gt;2056&lt;/td&gt;
+      &lt;td&gt;10698&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5k&lt;/td&gt;
+      &lt;td&gt;5464&lt;/td&gt;
+      &lt;td&gt;29446&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10k&lt;/td&gt;
+      &lt;td&gt;9830&lt;/td&gt;
+      &lt;td&gt;59431&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;20k&lt;/td&gt;
+      &lt;td&gt;19583&lt;/td&gt;
+      &lt;td&gt;110431&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;40k&lt;/td&gt;
+      &lt;td&gt;41901&lt;/td&gt;
+      &lt;td&gt;238965&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/p&gt;
+&lt;h6&gt;Insert&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.kendix.org/media/images/11.png&#34; class=&#34;fancy&#34;&gt;&lt;img src=&#34;http://www.kendix.org/media/images/11.png&#34; class=&#34;fancy&#34; alt=&#34;Insert results&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;table class=&#34;table table-condensed table-striped table-bordered&#34;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;nested &lt;/th&gt;
+      &lt;th&gt;dict &lt;/th&gt;
+      &lt;th&gt;virtNative &lt;/th&gt;
+      &lt;th&gt;virtHttp&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2k&lt;/td&gt;
+      &lt;td&gt; 1.609s&lt;/td&gt;
+      &lt;td&gt; 10.031s&lt;/td&gt;
+      &lt;td&gt; 0.512s&lt;/td&gt;
+      &lt;td&gt; 1.415s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5k&lt;/td&gt;
+      &lt;td&gt; 7.811s&lt;/td&gt;
+      &lt;td&gt; 30.522s&lt;/td&gt;
+      &lt;td&gt; 1.300s&lt;/td&gt;
+      &lt;td&gt; 3.163s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10k&lt;/td&gt;
+      &lt;td&gt; 23.148s&lt;/td&gt;
+      &lt;td&gt; 83.707s&lt;/td&gt;
+      &lt;td&gt; 2.697s&lt;/td&gt;
+      &lt;td&gt; 6.368s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;20k&lt;/td&gt;
+      &lt;td&gt; 176.297s&lt;/td&gt;
+      &lt;td&gt; 251.442s&lt;/td&gt;
+      &lt;td&gt; 5.674s&lt;/td&gt;
+      &lt;td&gt; 13.605s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;40k&lt;/td&gt;
+      &lt;td&gt; 733.773s&lt;/td&gt;
+      &lt;td&gt; 998.763s&lt;/td&gt;
+      &lt;td&gt; 15.153s&lt;/td&gt;
+      &lt;td&gt; 42.731s&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As you can see, both MongoDB implementations are extremely slow inserting the triples. There are differences of 15 minutes and more! But it’s hard to say what the reasons for this results are. Because of the &lt;a href=&#34;http://www.dotnetrdf.org/blogitem.asp?blogID=35&#34;&gt;mentioned&lt;/a&gt; article which presents similar results, we can only guess that MongoDB itself is the reason and not the implementations. Maybe it has something to do with updating the&amp;nbsp;indices.&lt;/p&gt;
+&lt;h6&gt;Query&lt;/h6&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.kendix.org/media/images/12.png&#34; class=&#34;fancy&#34;&gt;&lt;img src=&#34;http://www.kendix.org/media/images/12.png&#34; alt=&#34;Query results&#34; /&gt;&lt;/a&gt;
+&lt;table class=&#34;table table-condensed table-striped table-bordered&#34;&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;nested &lt;/th&gt;
+      &lt;th&gt;dict &lt;/th&gt;
+      &lt;th&gt;virtNative &lt;/th&gt;
+      &lt;th&gt;virtHttp&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2k&lt;/td&gt;
+      &lt;td&gt; 0.0115s&lt;/td&gt;
+      &lt;td&gt; 0.1095s&lt;/td&gt;
+      &lt;td&gt; 0.0025s&lt;/td&gt;
+      &lt;td&gt; 0.0325s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5k&lt;/td&gt;
+      &lt;td&gt; 0.0120s&lt;/td&gt;
+      &lt;td&gt; 0.2485s&lt;/td&gt;
+      &lt;td&gt; 0.0030s&lt;/td&gt;
+      &lt;td&gt; 0.0325s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10k&lt;/td&gt;
+      &lt;td&gt; 0.0120s&lt;/td&gt;
+      &lt;td&gt; 0.4680s&lt;/td&gt;
+      &lt;td&gt; 0.0030s&lt;/td&gt;
+      &lt;td&gt; 0.0320s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;20k&lt;/td&gt;
+      &lt;td&gt; 0.0110s&lt;/td&gt;
+      &lt;td&gt; 0.8550s&lt;/td&gt;
+      &lt;td&gt; 0.0030s&lt;/td&gt;
+      &lt;td&gt; 0.0320s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;40k&lt;/td&gt;
+      &lt;td&gt; 0.0100s&lt;/td&gt;
+      &lt;td&gt; 2.0470s&lt;/td&gt;
+      &lt;td&gt; 0.0010s&lt;/td&gt;
+      &lt;td&gt; 0.0220s&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/p&gt;
+&lt;p&gt;The results of the probably most used query method findBySubject() are quite better than the insert ones. While Virtuoso via &lt;span class=&#34;caps&#34;&gt;ODBC&lt;/span&gt; is the fastest implementation, the MongoDB implementation nested is faster than Virtuoso via &lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;. The second MongoDB implementation is continously the slowest&amp;nbsp;system.&lt;/p&gt;
+&lt;p&gt;For the results of the other query methods, please take a look in the&amp;nbsp;thesis.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;The implementation dict is continously the slowest&amp;nbsp;one.&lt;/li&gt;
+&lt;li&gt;The implementation nested is in four of five query methods faster than Virtuoso via&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;HTTP&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Virtuoso via &lt;span class=&#34;caps&#34;&gt;ODBC&lt;/span&gt; is continously the fastest&amp;nbsp;system.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Overall: With the results in mind, we can draw the conclusion that MongoDB as a triple store is only useful with small to mid sized data sets. Furthermore it is advisable to use it only in query-oriented environments because of the lacking performance inserting&amp;nbsp;triples.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">vi Bindings everywhere</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/vi-bindings-everywhere"/>
+            <updated>2011-02-28T00:00:00Z</updated>
+            <published>2011-02-28T00:00:00Z</published>
+            <id>/blog/vi-bindings-everywhere</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="vi"
+                        label="Vi" />
+            
+            <content type="html">
+                                &lt;p&gt;This should be a little overview of how to tweak some programs to use the awesome vi Bindings. I&amp;#8217;m sure its not&amp;nbsp;complete.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Abiword&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;Put &lt;code&gt;KeyBindings=&#34;viEdit&#34;&lt;/code&gt; in the &lt;code&gt;&amp;lt;Scheme name=&#34;_custom_&#34; ...&amp;gt;&lt;/code&gt; section of your &lt;code&gt;~/.AbiSuite/AbiWord.Profile&lt;/code&gt;
+ If you want to cycle through the input methods pressing F12, put &lt;code&gt;KeyBindingsCycle=&#34;1&#34;&lt;/code&gt; also in this&amp;nbsp;section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bash&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;set -o vi&#34; &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;set editing-mode vi&#34; &amp;gt;&amp;gt; ~/.inputrc&lt;/code&gt; (for other &lt;code&gt;readline&lt;/code&gt; based tools, e.g.&amp;nbsp;psql)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chrome/Chromium&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.chromeextensions.org/other/vrome/&#34;&gt;Vrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb?hl=de&#34;&gt;Vimium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eclipse&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://eclim.org/&#34;&gt;eclim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vrapper.sourceforge.net/home/&#34;&gt;Vrapper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Emacs&lt;/strong&gt; :)  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gitorious.org/evil/&#34;&gt;Evil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gitorious.org/vimpulse/&#34;&gt;Vimpulse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.emacswiki.org/emacs/ViperMode&#34;&gt;ViperMode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://5digits.org/pentadactyl/&#34;&gt;Pentadactyl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vimperator.org/vimperator&#34;&gt;Vimperator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;irssi&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shabble/irssi-scripts/tree/master/vim-mode&#34;&gt;vim_mode.pl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;zsh&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;bindkey -v&#34; &amp;gt;&amp;gt; ~/.zshrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sharpsaw/vim-dots/blob/master/.zsh/rc/vi-keys%2B&#34;&gt;vi-keys+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;last update:&amp;nbsp;2012-09-03&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Dia Shapes für Logikgatter nach IEC 60617-12 Norm</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/dia-shapes-fuer-logikgatter-nach-iec-60617-12-norm"/>
+            <updated>2010-12-01T00:00:00Z</updated>
+            <published>2010-12-01T00:00:00Z</published>
+            <id>/blog/dia-shapes-fuer-logikgatter-nach-iec-60617-12-norm</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="dia"
+                        label="Dia" />
+            
+            <content type="html">
+                                &lt;p&gt;&lt;a href=&#34;http://projects.gnome.org/dia/&#34;&gt;Dia&lt;/a&gt; ist seit einiger Zeit mein Standardprogramm wenn es um Diagramme geht. 
+Für mein Studium brauchte ich Logikgatter nach &lt;span class=&#34;caps&#34;&gt;IEC&lt;/span&gt; Norm, welche in Deutschland wohl Stand der Dinge wären. Da ich diese Shapes nirgends finden konnte, habe ich sie mal selber erstellt.
+Hier also die die entsprechenden Dateien:
+&lt;a href=&#34;/media/files/dia_logic_iec.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zum ‘Installieren’ einfach die beiden Ordner in das Verzeichnis ~/.dia/ (unter Linux)&amp;nbsp;entpacken.&lt;/p&gt;
+&lt;p&gt;Und wem die Shapes nicht gefallen, hier noch die Quellgrafiken:
+&lt;a href=&#34;/media/files/dia_logic_iec_shapes.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;            </content>
+        </entry>
+    </feed>

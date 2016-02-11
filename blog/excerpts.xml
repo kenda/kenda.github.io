@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2016-02-11T21:00:38Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">My public Emacs config</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/my_public_emacs_config"/>
+            <updated>2014-12-14T23:00:00Z</updated>
+            <published>2014-12-14T23:00:00Z</published>
+            <id>/blog/my_public_emacs_config</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                
+                &lt;p&gt;
+After months, I finally got my Emacs config published. It is now available on &lt;a href=&#34;https://github.com/kenda/.emacs.d&#34;&gt;Github&lt;/a&gt;. So check out the &lt;a href=&#34;https://github.com/kenda/.emacs.d/blob/master/config.org&#34;&gt;config.org&lt;/a&gt; file for the main configuration. If you found interesting parts or ideas for improvements - just leave a comment below&amp;nbsp;:)
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Basic Emacs-keybindings for LibreOffice Writer</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/basic_emacs_bindings_for_libreoffice_writer"/>
+            <updated>2012-06-08T12:00:00Z</updated>
+            <published>2012-06-08T12:00:00Z</published>
+            <id>/blog/basic_emacs_bindings_for_libreoffice_writer</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="LibreOffice"
+                        label="Libreoffice" />
+            
+            <content type="html">
+                
+                &lt;p&gt;
+Although I try to avoid to use word processors like LibreOffice Writer, sometimes   - mainly for collaboration purposes - I have to fall back on them. And in such hard
+times I want to have at least some useful keybindings. Because I couldn&amp;#8217;t find any downloads that provide Emacs bindings for OpenOffice/LibreOffice Writer
+I configured the basic bindings which you can download &lt;a href=&#34;../../media/files/writer_bindings_emacs.zip&#34;&gt;here&lt;/a&gt;.
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Moving from Textpattern to Hyde and integrating Orgmode</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/moving_from_textpattern_to_hyde"/>
+            <updated>2012-01-18T16:55:00Z</updated>
+            <published>2012-01-18T16:55:00Z</published>
+            <id>/blog/moving_from_textpattern_to_hyde</id>
+                        <category   scheme="/blog/tags"
+                        term="Textpattern"
+                        label="Textpattern" />
+                        <category   scheme="/blog/tags"
+                        term="Hyde"
+                        label="Hyde" />
+                        <category   scheme="/blog/tags"
+                        term="Python"
+                        label="Python" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                
+                &lt;p&gt;
+This post is about my switch from &lt;a href=&#34;http://textpattern.org&#34;&gt;Textpattern&lt;/a&gt; to &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt; as my website system (some call it &lt;span class=&#34;caps&#34;&gt;CMS&lt;/span&gt;&amp;nbsp;thought).
+&lt;/p&gt;
+
+&lt;p&gt;
+In the past I tried a few systems, starting with &lt;a href=&#34;http://wordpress.org&#34;&gt;Wordpress&lt;/a&gt;, then &lt;a href=&#34;http://www.dokuwiki.org/dokuwiki&#34;&gt;DokuWiki&lt;/a&gt; and then Textpattern. The reasons for this
+changes were mostly the extensibility of the systems and the way you write articles/posts etc. Until the next switch I think
+I&amp;#8217;m happy with Hyde&amp;nbsp;:)
+&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Save useful time by writing presentations with Orgmode and Beamer class</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/presentations-with-orgmode-and-beamer-class"/>
+            <updated>2011-10-29T00:00:00Z</updated>
+            <published>2011-10-29T00:00:00Z</published>
+            <id>/blog/presentations-with-orgmode-and-beamer-class</id>
+                        <category   scheme="/blog/tags"
+                        term="Emacs"
+                        label="Emacs" />
+                        <category   scheme="/blog/tags"
+                        term="Orgmode"
+                        label="Orgmode" />
+            
+            <content type="html">
+                
+                &lt;p&gt;I just wanted to share my happiness about a new workflow for writing presentations. I couldn’t believe how quick I got useful slides by writing my notes with Emacs’ &lt;a href=&#34;http://orgmode.org/&#34;&gt;Orgmode&lt;/a&gt;. So, here it&amp;nbsp;is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do some research or brainstorming or whatever and take notes with&amp;nbsp;Orgmode&lt;/li&gt;
+&lt;li&gt;Do a little cleanup on the structure of your notes so that you get a useful &lt;a href=&#34;http://orgmode.org/worg/org-tutorials/org-beamer/tutorial.html#sec-3&#34;&gt;structure&lt;/a&gt; of your&amp;nbsp;slides&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://orgmode.org/manual/Exporting.html&#34;&gt;Export&lt;/a&gt; your notes with the LaTeX &lt;a href=&#34;https://bitbucket.org/rivanvx/beamer/&#34;&gt;Beamer class&lt;/a&gt;  &lt;ul&gt;
+&lt;li&gt;You may have to append the defintion for beamer class to org-export-latex-classes. Here is &lt;a href=&#34;https://gist.github.com/1324351&#34;&gt;my&lt;/a&gt;&amp;nbsp;definition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That’s it!
+This means you don’t waste any time with creating your slides and you can concentrate 100% on the content. I’m sure that’s (even more) faster than writing pure LaTeX and faster, nicer, … than [Open|Libre]Office/&lt;span class=&#34;caps&#34;&gt;PPT&lt;/span&gt; anyway. Don’t know what to do with the whole time, but thanks Orgmode!&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;Further&amp;nbsp;reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html&#34;&gt;http://emacs-fu.blogspot.com/2009/10/writing-presentations-with-org-mode-and.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://orgmode.org/manual/Beamer-class-export.html&#34;&gt;http://orgmode.org/manual/Beamer-class-export.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;P.S.: Yeah, two posts below this one, I wrote about Vim – just don’t care&amp;nbsp;;)&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">MongoDB as RDF triple store based on Node.js</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/mongodb-as-rdf-triple-store"/>
+            <updated>2011-09-23T00:00:00Z</updated>
+            <published>2011-09-23T00:00:00Z</published>
+            <id>/blog/mongodb-as-rdf-triple-store</id>
+                        <category   scheme="/blog/tags"
+                        term="MongoDB"
+                        label="Mongodb" />
+                        <category   scheme="/blog/tags"
+                        term="Nodejs"
+                        label="Nodejs" />
+                        <category   scheme="/blog/tags"
+                        term="RDF"
+                        label="Rdf" />
+            
+            <content type="html">
+                
+                &lt;p&gt;This is a short summary of my &lt;a href=&#34;/media/files/thesis.pdf&#34;&gt;bachelor thesis&lt;/a&gt; that was written in German. Maybe someone else is interested in the&amp;nbsp;results.&lt;/p&gt;
+&lt;h4&gt;About&lt;/h4&gt;
+&lt;p&gt;The topic of the thesis was “Implementing a &lt;span class=&#34;caps&#34;&gt;RDF&lt;/span&gt; storage solution for &lt;a href=&#34;http://mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;”. Besides this implementation part the performance of the written &lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt; was compared to &lt;a href=&#34;http://www.openlinksw.com/dataspace/dav/wiki/Main/&#34;&gt;Virtuoso Open-Source&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So, to summarize this thesis, the main question is “Could MongoDB be an alternative to Virtuoso as triple&amp;nbsp;store?”.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">vi Bindings everywhere</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/vi-bindings-everywhere"/>
+            <updated>2011-02-28T00:00:00Z</updated>
+            <published>2011-02-28T00:00:00Z</published>
+            <id>/blog/vi-bindings-everywhere</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="vi"
+                        label="Vi" />
+            
+            <content type="html">
+                
+                &lt;p&gt;This should be a little overview of how to tweak some programs to use the awesome vi Bindings. I&amp;#8217;m sure its not&amp;nbsp;complete.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Abiword&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;Put &lt;code&gt;KeyBindings=&#34;viEdit&#34;&lt;/code&gt; in the &lt;code&gt;&amp;lt;Scheme name=&#34;_custom_&#34; ...&amp;gt;&lt;/code&gt; section of your &lt;code&gt;~/.AbiSuite/AbiWord.Profile&lt;/code&gt;
+ If you want to cycle through the input methods pressing F12, put &lt;code&gt;KeyBindingsCycle=&#34;1&#34;&lt;/code&gt; also in this&amp;nbsp;section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bash&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;set -o vi&#34; &amp;gt;&amp;gt; ~/.bashrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;set editing-mode vi&#34; &amp;gt;&amp;gt; ~/.inputrc&lt;/code&gt; (for other &lt;code&gt;readline&lt;/code&gt; based tools, e.g.&amp;nbsp;psql)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chrome/Chromium&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.chromeextensions.org/other/vrome/&#34;&gt;Vrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb?hl=de&#34;&gt;Vimium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Eclipse&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://eclim.org/&#34;&gt;eclim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vrapper.sourceforge.net/home/&#34;&gt;Vrapper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Emacs&lt;/strong&gt; :)  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gitorious.org/evil/&#34;&gt;Evil&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gitorious.org/vimpulse/&#34;&gt;Vimpulse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.emacswiki.org/emacs/ViperMode&#34;&gt;ViperMode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Firefox&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://5digits.org/pentadactyl/&#34;&gt;Pentadactyl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vimperator.org/vimperator&#34;&gt;Vimperator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;irssi&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shabble/irssi-scripts/tree/master/vim-mode&#34;&gt;vim_mode.pl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;zsh&lt;/strong&gt;  &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo &#34;bindkey -v&#34; &amp;gt;&amp;gt; ~/.zshrc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sharpsaw/vim-dots/blob/master/.zsh/rc/vi-keys%2B&#34;&gt;vi-keys+&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;last update:&amp;nbsp;2012-09-03&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Dia Shapes für Logikgatter nach IEC 60617-12 Norm</title>
+            <author><name>Marcus Nitzschke</name></author>
+            <link href="/blog/dia-shapes-fuer-logikgatter-nach-iec-60617-12-norm"/>
+            <updated>2010-12-01T00:00:00Z</updated>
+            <published>2010-12-01T00:00:00Z</published>
+            <id>/blog/dia-shapes-fuer-logikgatter-nach-iec-60617-12-norm</id>
+                        <category   scheme="/blog/tags"
+                        term="linux"
+                        label="Linux" />
+                        <category   scheme="/blog/tags"
+                        term="dia"
+                        label="Dia" />
+            
+            <content type="html">
+                
+                &lt;p&gt;&lt;a href=&#34;http://projects.gnome.org/dia/&#34;&gt;Dia&lt;/a&gt; ist seit einiger Zeit mein Standardprogramm wenn es um Diagramme geht. 
+Für mein Studium brauchte ich Logikgatter nach &lt;span class=&#34;caps&#34;&gt;IEC&lt;/span&gt; Norm, welche in Deutschland wohl Stand der Dinge wären. Da ich diese Shapes nirgends finden konnte, habe ich sie mal selber erstellt.
+Hier also die die entsprechenden Dateien:
+&lt;a href=&#34;/media/files/dia_logic_iec.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Zum ‘Installieren’ einfach die beiden Ordner in das Verzeichnis ~/.dia/ (unter Linux)&amp;nbsp;entpacken.&lt;/p&gt;
+&lt;p&gt;Und wem die Shapes nicht gefallen, hier noch die Quellgrafiken:
+&lt;a href=&#34;/media/files/dia_logic_iec_shapes.zip&#34;&gt;Download&lt;/a&gt;&lt;/p&gt;            </content>
+        </entry>
+    </feed>
